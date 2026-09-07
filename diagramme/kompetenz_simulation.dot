@@ -1,0 +1,69 @@
+digraph G {
+    rankdir=LR;
+    bgcolor="white";
+
+    node [
+        shape=box,
+        style="rounded,filled",
+        fontname="Helvetica",
+        fontsize=12,
+        color="#444444",
+        fontcolor="#333333",
+        width=.75,
+        width=3.0,
+        fixedsize=true
+    ];
+
+    /* FIXED WIDTH FOR THE THREE MAIN NODES */
+    A [
+        fillcolor="#c8e6c9",
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" WIDTH="220">
+                <TR><TD><B>Fake it till you make it</B></TD></TR>
+                <TR><TD>Vygotskij: Imitation führt zu Internalisierung</TD></TR>
+                <TR><TD>Anderson: Skill Acquisition (ACT-R)</TD></TR>
+            </TABLE>
+        >
+    ];
+
+    B [
+        fillcolor="#fff9c4",
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" WIDTH="220">
+                <TR><TD><B>Laissez-faire</B></TD></TR>
+                <TR><TD>Self-Regulated Learning (Zimmerman)</TD></TR>
+                <TR><TD>Humanistische Modelle (Rogers)</TD></TR>
+            </TABLE>
+        >
+    ];
+
+    C [
+        fillcolor="#ffcdd2",
+        label=<
+            <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" WIDTH="220">
+                <TR><TD><B>Systemische Kompetenzsimulation</B></TD></TR>
+                <TR><TD>Delegation an KI heisst keine Eigenleistung</TD></TR>
+                <TR><TD>Performanz entkoppelt von Kompetenz</TD></TR>
+            </TABLE>
+        >
+    ];
+
+    A1 [label="Imitation fuehrt zu Uebung", fillcolor="#eaf7ec"];
+    A2 [label="Eigenleistung vorhanden", fillcolor="#eaf7ec"];
+    A3 [label="Wiederholung -> Kompetenz", fillcolor="#eaf7ec"];
+
+    B1 [label="Verantwortung beim Schueler", fillcolor="#fffbe0"];
+    B2 [label="Taeuschung = Selbstschaden", fillcolor="#fffbe0"];
+    B3 [label="System bleibt stabil", fillcolor="#fffbe0"];
+
+    C1 [label="KI erzeugt Leistung ohne Kompetenz", fillcolor="#ffe5e7"];
+    C2 [label="Keine Eigenleistung", fillcolor="#ffe5e7"];
+    C3 [label="Systemische Simulation", fillcolor="#ffe5e7"];
+
+    A -> A1; A -> A2; A -> A3;
+    B -> B1; B -> B2; B -> B3;
+    C -> C1; C -> C2; C -> C3;
+
+    A -> C [style=dashed, color="#777777", label="KI eliminiert Imitation", fontcolor="#555555"];
+    B -> C [style=dashed, color="#777777", label="KI macht Betrug unsichtbar", fontcolor="#555555"];
+}

@@ -1,0 +1,55 @@
+%%{init: {'flowchart': {'htmlLabels': false}}}%%
+graph TD
+    %% Define the main nodes (boxes)
+    A["**&quot;Fake it till you make it&quot;**<br>• **Vygotskij**: Imitation → Internalisierung<br>• **Anderson**: Skill Acquisition (ACT-R)<br>• Mechanische Übung → Lernen"]
+    B["**&quot;Laissez-faire&quot;**<br>• Self-Regulated Learning (**Zimmerman**)<br>• Humanistische Modelle (**Rogers**)<br>• Lernen = Eigenverantwortung"]
+    C["**Systemische Kompetenzsimulation**<br>• Delegation an KI → keine Eigenleistung<br>• Performanz ≠ Kompetenz<br>• Alle sind gezwungen KI zu verwenden"]
+
+    %% Define the sub-boxes within "Fake it" (A)
+    subgraph Fake_Sub_Boxes [" "]
+        direction TB
+        A1("• Imitation führt zu Übung")
+        A2("• Eigenleistung vorhanden")
+        A3("• Wiederholung → Kompetenz")
+    end
+
+    %% Define the sub-boxes within "Laissez-faire" (B)
+    subgraph Laissez_Sub_Boxes [" "]
+        direction TB
+        B1("• Verantwortung beim Schüler")
+        B2("• Täuschung = Selbstschaden")
+        B3("• Motivation → Kompetenz")
+    end
+
+    %% Invisible connection to place sub-boxes below the main box.
+    %% Mermaids positioning can be tricky; this often helps align things.
+    A --> Fake_Sub_Boxes_Ghost( )
+    B --> Laissez_Sub_Boxes_Ghost( )
+    style Fake_Sub_Boxes_Ghost fill:transparent, stroke:transparent
+    style Laissez_Sub_Boxes_Ghost fill:transparent, stroke:transparent
+    
+    %% Explicitly try to position the subgraphs under their main concepts
+    A ~~~ A1
+    B ~~~ B1
+
+    %% The main connections (arrows) with labels
+    A -- KI eliminiert Imitation --> C
+    B -- KI macht Betrug unsichtbar --> C
+
+    %% Apply the custom styling (classes) for colors
+    classDef fakeit fill:#c8e6c9,stroke:#ffffff,stroke-width:1.79623
+    classDef laissezfaire fill:#fff9c4,stroke:#ffffff,stroke-width:1.76662
+    classDef system fill:#ffcdd2,stroke:#f9f9f9,stroke-width:1.76912
+    
+    classDef fakeit_sub fill:#eaf7ec,stroke:#a5d6a7
+    classDef laissezfaire_sub fill:#fffbe0,stroke:#ffe082
+    
+    class A fakeit
+    class B laissezfaire
+    class C system
+    
+    class A1, A2, A3 fakeit_sub
+    class B1, B2, B3 laissezfaire_sub
+
+    %% Style the links to be dashed and red (Mermaid has limited link styling)
+    linkStyle 0,1 stroke-dasharray: 5 5, stroke:#a80202, stroke-width:2px;

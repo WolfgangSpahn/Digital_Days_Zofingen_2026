@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Concept Graph</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    #svg-container {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div id="svg-container">
+        <!-- INSERT_SVG_HERE -->
+    </div>
+
+  <script>
+    // Now we don’t need fetch(); the SVG is already in the DOM.
+
+    // Get all path elements with white fill (node backgrounds), excluding those under #patch-1
+    const allPaths = document.querySelectorAll('path[style*="fill: #ffffff"]');
+    const paths = Array.from(allPaths).filter(path => !path.closest('#patch_1'));
+    paths.forEach(path => {
+      path.style.cursor = 'pointer';
+      path.addEventListener('click', () => {
+        console.log('Clicked on node background');
+        const currentFill = path.style.fill || '#ffffff';
+        path.style.fill = currentFill === 'lightblue' ? '#ffffff' : 'lightblue';
+      });
+    });
+
+    // Get all text elements with dark red fill (edge labels)
+    const edgeTexts = document.querySelectorAll('text[style*="fill: #8b0000"]');
+    edgeTexts.forEach(text => {
+      text.style.cursor = 'pointer';
+      text.addEventListener('click', () => {
+        console.log('Clicked on edge label');
+        const currentFill = text.style.fill || '#8b0000';
+        text.style.fill = currentFill === 'lightblue' ? '#8b0000' : 'lightblue';
+      });
+    });
+  </script>
+</body>
+</html>

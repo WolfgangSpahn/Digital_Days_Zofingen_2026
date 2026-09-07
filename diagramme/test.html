@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <title>D3 Tree with Embedded Text and List Leaves</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Styling for internal node circles */
+    .node circle {
+      fill: #e6e6fa; /* Light purple fill */
+      stroke: steelblue;
+      stroke-width: 3px;
+    }
+
+    /* General text styling */
+    .node text {
+      font: 14px sans-serif;
+    }
+
+    /* Styling for leaf node text (the bullet list) */
+    .node--leaf text {
+      fill: #333;
+      font-style: italic;
+      text-anchor: start; /* Bullet text starts from the left */
+    }
+    
+    /* Styling for internal node text (centered in the box/circle) */
+    .node--internal text {
+        fill: #000;
+        font-weight: bold;
+    }
+
+    /* Styling for links (edges) */
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="tree-container" style="position:relative; z-index:1;"></div>
+
+  <script>
+    // 1. Data Structure - nodes and links for directed graph
+    const nodes = [
+      { id: "root", 
+        title: "Kompetenz Aufbau", 
+        level: 0,
+        color: "#ccffcc", 
+        borderColor: "green" },
+      { id: "node1", 
+        title: "Ausführen → Üben → Automatisieren", 
+        bullet: [
+            "<b>Vygotskij</b>: Imitation führt zu Internalisierung", 
+            "<b>Anderson</b>: Skill Acquisition (ACT-R)"], 
+        level: 1 },
+      { id: "node2", 
+        title: "Freiheit → Selbststeuerung → Selbstentfaltung", 
+        bullet: [
+            "<b>Zimmerman</b>: Self-Regulated Learning", 
+            "<b>Ryan/Deci</b>: Intrinsic and Extrinsic Motivations"], 
+        level: 1 },
+      { id: "node3", 
+        title: "Fake it till you make it", 
+        bullet: ["Kommen wir noch ins anwenden?"], 
+        level: 2, 
+        color: "#ffe6cc", 
+        borderColor: "orange" },
+      { id: "node4", 
+        title: "Laissez-faire", 
+        bullet: ["Wie viel Freiheit verträgt Lernen?"], 
+        level: 2, 
+        color: "#ffe6cc", 
+        borderColor: "orange" },
+      { id: "node5", 
+        title: "Kompetenz Simulation", 
+        level: 3, 
+        color: "#ffcccc", 
+        borderColor: "red" }
+    ];
+    
+    const links = [
+      { source: "root", target: "node1" },
+      { source: "root", target: "node2" },
+      { source: "node1", target: "node3" },
+      { source: "node2", target: "node4" },
+      { source: "node3", target: "node5" },
+      { source: "node4", target: "node5" }
+    ];
+
+    // 2. Set up the dimensions
+    const margin = { top: 40, right: 250, bottom: 50, left: 90 },
+      width = 1400 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+
+    // Append the SVG object
+    const svg = d3.select("#tree-container").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // 3. Calculate node positions based on levels
+    const levelHeight = height / 3;
+    const nodeMap = new Map();
+    
+    // First pass: position nodes with multiple siblings
+    const nodesByLevel = d3.group(nodes, d => d.level);
+    nodes.forEach(node => {
+      const nodesAtLevel = nodesByLevel.get(node.level);
+      
+      if (nodesAtLevel.length > 1) {
+        // Multiple nodes - distribute them
+        const levelWidth = width / (nodesAtLevel.length + 0.5);
+        const index = Array.from(nodesAtLevel).indexOf(node);
+        node.x = levelWidth * (index + 0.5);
+      }
+      
+      node.y = levelHeight * node.level;
+      nodeMap.set(node.id, node);
+    });
+    
+    // Second pass: center single nodes between their children
+    nodes.forEach(node => {
+      const nodesAtLevel = nodesByLevel.get(node.level);
+      if (nodesAtLevel.length === 1) {
+        // For root, center between its children
+        if (node.id === "root") {
+          const childIds = links.filter(l => l.source === node.id).map(l => l.target);
+          if (childIds.length > 0) {
+            const childNodes = childIds.map(id => nodes.find(n => n.id === id));
+            const avgX = childNodes.reduce((sum, n) => sum + n.x, 0) / childNodes.length;
+            node.x = avgX;
+          } else {
+            node.x = width / 2;
+          }
+        }
+        // For Kompetenz Simulation, center between its parents
+        else if (node.id === "node5") {
+          const parentIds = links.filter(l => l.target === node.id).map(l => l.source);
+          if (parentIds.length > 0) {
+            const parentNodes = parentIds.map(id => nodes.find(n => n.id === id));
+            const avgX = parentNodes.reduce((sum, n) => sum + n.x, 0) / parentNodes.length;
+            node.x = avgX;
+          } else {
+            node.x = width / 2;
+          }
+        }
+        // Otherwise, use previous logic
+        else {
+          const childIds = links.filter(l => l.source === node.id).map(l => l.target);
+          if (childIds.length > 0) {
+            const childNodes = childIds.map(id => nodes.find(n => n.id === id));
+            const avgX = childNodes.reduce((sum, n) => sum + n.x, 0) / childNodes.length;
+            node.x = avgX;
+          } else {
+            node.x = width / 2;
+          }
+        }
+      }
+    });
+
+    // 4. Create link data with source/target coordinates
+    const linkData = links.map(link => ({
+      source: nodeMap.get(link.source),
+      target: nodeMap.get(link.target)
+    }));
+
+    // 5. Add the links (paths)
+    svg.selectAll(".link")
+      .data(linkData)
+      .enter().append("path")
+      .attr("class", "link")
+      .attr("d", d3.linkVertical()
+        .x(d => d.x)
+        .y(d => d.y));
+        
+    // 6. Add the nodes and labels
+    const node = svg.selectAll(".node")
+      .data(nodes)
+      .enter().append("g")
+      .attr("class", "node node--internal")
+      .attr("transform", d => `translate(${d.x},${d.y})`);
+
+    // --- NODE RENDERING (Circle with title and bullets) ---
+    // Draw circles for all nodes
+    node.append("circle")
+      .attr("r", 30)
+      .style("fill", d => d.color || "#e6e6fa")
+      .style("stroke", d => d.borderColor || "steelblue");
+
+    // Text for nodes - show title with bullets below
+    node.append("text")
+      .attr("y", 0)
+      .attr("x", 40)
+      .attr("text-anchor", "start")
+      .each(function(d) {
+        const textElement = d3.select(this);
+        const bulletItems = d.bullet || [];
+        
+        // Add title as first line
+        textElement.append("tspan")
+          .attr("x", 40)
+          .attr("dy", "0.35em")
+          .style("font-size", "16px")
+          .style("fill", "#000")
+          .style("font-weight", "bold")
+          .text(d.title);
+        
+        // Add bullet points below title
+        bulletItems.forEach((item) => {
+          // Parse HTML bold tags and create multiple tspans
+          const regex = /(<b>.*?<\/b>)/g;
+          const parts = item.split(regex).filter(p => p.length > 0);
+          const lineY = "1.2em";
+          let isFirstPart = true;
+          
+          if (parts.length === 0) {
+            // No bold tags, just regular text
+            textElement.append("tspan")
+              .attr("x", 40)
+              .attr("dy", lineY)
+              .style("font-size", "14px")
+              .style("fill", "#666")
+              .style("font-weight", "normal")
+              .text(`• ${item}`);
+          } else {
+            parts.forEach((part) => {
+              if (part.match(/<b>.*?<\/b>/)) {
+                // Bold text
+                const boldText = part.replace(/<\/?b>/g, "");
+                textElement.append("tspan")
+                  .attr("x", isFirstPart ? 40 : null)
+                  .attr("dy", isFirstPart ? lineY : 0)
+                  .style("font-size", "14px")
+                  .style("fill", "#666")
+                  .style("font-weight", "bold")
+                  .text(isFirstPart ? `• ${boldText}` : boldText);
+                isFirstPart = false;
+              } else if (part.length > 0) {
+                // Normal text
+                textElement.append("tspan")
+                  .attr("x", isFirstPart ? 40 : null)
+                  .attr("dy", isFirstPart ? lineY : 0)
+                  .style("font-size", "14px")
+                  .style("fill", "#666")
+                  .style("font-weight", "normal")
+                  .text(isFirstPart ? `• ${part}` : part);
+                isFirstPart = false;
+              }
+            });
+          }
+        });
+      });
+
+  </script>
+</body>
+</html>

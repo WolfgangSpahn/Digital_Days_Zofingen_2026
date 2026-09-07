@@ -1,0 +1,893 @@
+---
+title: "Kritisches Denken"
+subtitle: |
+  Wie kann KI kritisches Denken in MINT-Fächern fördern?
+  <br>
+  <br>
+  
+  <br>^v0.5.0^<br>
+  *Wolfgang Spahn*
+  <br><br>
+  10.09.2026
+  <br>
+  ![](images/phbern-cover.jpg){width="70%"}
+
+format: 
+  revealjs: 
+    config:
+      touch: false
+    controls: true
+    smaller: true
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    logo: images/logo_phbern.png
+    footer: Dr. Wolfgang Spahn
+    css: [styles.css]  # Include your custom CSS file here
+    include-in-header: includes.html
+bibliography: lit/literature.bib
+---
+
+## Infos
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+<br>
+Bitte diesen <span class="red">**Link**</span> verwenden:
+<br>
+<div class="centered-xxl-text"> [https://sebayt.ch/atelier3/](https://sebayt.ch/atelier3/) </div>
+<br>
+Für Vollbildmodus bitte diesen Button "Fullscreen" klicken oder Taste "F11".
+<br><br>
+<button onclick="goFullScreen()" class="centered-xxl-rounded-button">Fullscreen</button>
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Willkommen im Atelier
+
+<div type="teamCollection" id="team-collection"></div>
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Umfrage
+
+Habt Ihr einen ChatGPT (Gemini, Claude) Account?
+
+<div type="pollField" id="yesnoField0" choices='["Ja","Nein"]'></div>
+<div type="pollPercentage" ref="yesnoField0" yesno="true" class="centered-xl-text"></div>
+
+<br/><br/>
+
+Habt Ihr eine bezahlte Version (Pro, Plus, Enterprise)?
+
+<div type="pollField" id="yesnoField1" choices='["Ja","Nein"]'></div>
+<div type="pollPercentage" ref="yesnoField1" yesno="true" class="centered-xl-text"></div>
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## Agenda
+
+- **KI Status 2026 ([I](#i.))** <span class="red">^35min^</span>
+  - KI etabliert sich ^🞋[[Euer-KI-Ziel]](#euer-ki-ziel)^
+  - KI verändert die Schule ^🞋[[Zeitenwende]](#zeitenwende)^ 
+
+- **Lernen und Lehren mit/trotz Künstlicher Intelligenz ([II](#ii.))** <span class="red">^55min^</span>
+  * Mit KI auf Augenhöhe: s.d. ^🞋[[Zeichnen]](#zeichnen)^ ^🞋[[Richtig-Fragen]](#richtig-falsch-fragen)^  ^[[Geschichtsverständnis]](#geschichtsverständnis)^
+  * Mit KI auf Augenhöhe: g.k. ^[[Biologie]](#biologie)^ ^[[Kurvendiskussion]](#kurvendiskussion)^ ^🞋[[Känguruh-Math]](#känguruh-math)^
+  * Basale Kernkompetenzen lernen ^🞋[[Atombau]](#baue-ein-element)^
+
+
+
+<!-- =================================================== slide ===================================================== -->
+## I.
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI Status 2026
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Euer-KI-Ziel
+
+
+::::{.columns}
+::: {.column width="50%"}
+
+Input 1:
+
+<div type="inputField" id="inputFieldWA"></div>
+<div type="inputCollection" ref="inputFieldWA" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
+
+:::
+::: {.column width="50%}
+
+Input 2::
+
+<div type="inputField" id="inputFieldWB"></div>
+<div type="inputCollection" ref="inputFieldWB" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
+
+:::
+::::
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## KI - Entwicklung - 2026 1/2
+
+Komplexität einer autonomen Aufgabe (gemessen am menschlichen Zeitaufwand) verdoppelt sich alle 7 Monate. 
+
+![Graphic übersetzt und vereinfacht](images/Task_completion_AI_timeline_METR_de.png)
+
+:::{.text-2xs}
+[(METR, 2024)](https://metr.org/time-horizons/)
+[@kwa2026measuringaiabilitycomplete]
+:::
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## KI - Entwicklung - 2026 2/2
+
+:::: {.columns}
+::: {.column width="30%"}
+
+Top Forscher lösen **lange ungelöste Probleme**, erstmals mit KI Sprachmodelle, 
+
+- aber nur wenn sie die Sprachmodelle richtig steuern können.
+- je höher ausgebildet, desto besser die Steuerung, desto höher der Nutzen.
+
+:::
+
+::: {.column width="70%"}
+
+::: {=html}
+<div style="position: relative; width: 500px; height: 350px;">
+
+  <figure style="margin:0; padding:0; position: absolute; top: 300px; left: 300px; width: 320px; z-index: 9;">
+    <img src="images/CCompiler.png" style="width: 100%; border: 1px solid #888;" />
+  </figure>
+  <figure style="margin:0; padding:0; position: absolute; top: 150px; left: 150px; width: 320px; z-index: 6;">
+    <img src="images/FormelGluonenAmplitude.png" style="width: 100%; border: 1px solid #888;" />
+  </figure>
+  <figure style="margin:0; padding:0; position: absolute; top: 0px; left: 0px; width: 320px; z-index: 3;">
+    <img src="images/KnuthHamiltonianCynle.png" style="width: 100%; border: 1px solid #888;" />
+    <figcaption style="background:rgba(255,255,255,0.8); font-size:0.9em; padding:2px 6px; border-radius:4px; position:absolute; bottom:6px; left:6px;">Hamiltonian <br> Cycle</figcaption>
+  </figure>
+
+</div>
+:::
+:::
+::::
+
+:::{.text-2xs}
+links: [@knuth_claude_cycles; @openai_gluonen; @anthropic_c_compiler]
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## ICT Arbeitsmarkt
+
+**Nicole Helmer**, Vice President & Global Head of Development Learning bei **SAP**
+
+:::: {.columns}
+::: {.column width="40%" .text-sm}
+<br>
+*Neben dem unbestreitbaren Bedarf an einer verantwortungsvollen KI-Entwicklung und einer breiten KI-Kompetenz in sämtlichen IT-Berufen müssen* ***alle Mitarbeitenden*** ihre übergeordneten Fähigkeiten wie ***kritisches Denken, Kreativität und komplexes Problemlösen verbessern.***
+:::
+::: {.column width="60%" .small}
+<br>
+![](images/ICT Job impact.png){width="80%"}
+
+:::
+::::
+
+:::{.small}
+[@aiworkforce2024transformational]
+:::
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Erweitertes Denken
+
+* **Ja gerne!**
+
+  * Ideen finden, auf die wir selbst nicht kommen.
+  * Ergebnisse geistiger Arbeit erzielen, die vorher nicht möglich waren.
+  * Uns kognitiv selektiv entlasten.
+  * Geistiger Autor sein/bleiben.
+  * Kompetenz behalten, erweitern, entwickeln.
+
+* **Nein danke!**
+
+  * Kognitive Fähigkeiten verkümmern lassen.
+  * Fehlerhaft Inputs übernehmen.
+  * Geistige Autorenschaft verlieren.
+  * Vertrauliche Daten weitergeben.
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Zeitenwende 🞋
+
+NZZ Interview: KI-Analyse von Schüler:innen Statements
+
+:::: {.columns}
+::: {.column width="50%}
+**Arbeitsauftrag:** Analysiert die Aussagen der Schüler:innen im Interview mittels ChatGPT. Welche Chancen und Herausforderungen sehen sie?
+
+- [via gdrive](https://drive.google.com/file/d/1A2vqEu6sJ_OyV23g0lgrnsEHBAf4-_RZ/view?usp=sharing)
+- [link](https://www.nzz.ch/zuerich/man-wird-fauler-so-tricksen-gymi-schueler-ihre-lehrpersonen-mit-ki-chatbots-aus-ein-gespraech-im-klassenzimmer-ld.1927532)
+
+:::
+
+::: {.column width="50%}
+
+![Schülerinnen](images/ComicSchulklasse.png){width="80%"}
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## Ergebnis: Chancen und Herausforderungen
+
+![ChatGPT Analyse](images/ki_schule_graph.png){width="90%"}
+
+:::{.notes .small}
+**prompt:** Show me the story flow (L to R) as dot graphics. 
+
+- For the first two generations use mocassin color and oval shape
+- For the rest use lightblue fillcolor and rect shape. 
+- use helvetica font
+
+[link](https://graphvizonline.net)
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## Research
+
+Was sagt die Forschung zu den Auswirkungen von KI auf Lernen und Gedächtnis?:
+
+:::: {.columns}
+::: {.column width="70%" .text-0xs}
+
+> MIT:"*Over four months,* <span class="blue">***LLM users consistently underperformed*** [less cognitive load, less recall] </span> at neural, linguistic, and behavioral levels. These results raise concerns about the long-term educational implications of LLM reliance and underscore the* ***need for deeper inquiry into AI's role in learning.***"
+
+> Meta-Analysis: "*[The study] indicates a* <span class="blue">***large positive impact*** [large standardized mean difference] ***(g = 0.867) of ChatGPT***</span> on student learning performance. ... [with] significant differences [...] in the type of course, learning model, and duration. [For] higher-order thinking, it is crucial to provide corresponding learning scaffolds or educational frameworks*"
+
+
+:::
+::: {.column width="30%"}
+<div style="position: relative; height: 12cm;">
+  <img src="images/MITBrainAILearning.png" style="width:50%; position: absolute; top: 0cm; left: 0cm;" class="image-border"/>
+  <img src="images/EffectOfChatGPTOnStudentsPerformance.png" style="width:50%; position: absolute; top: 2cm; left: 2cm;" class="image-border"/>
+</div>
+:::
+::::
+
+:::{.text-1xs}
+@Wang2025,@kosmyna2025brainchatgptaccumulationcognitive
+:::
+
+:::{.notes}
+**Man kann vermuten, dass die Lernenden <span class="blue">zwar bessere Ergebnisse erzielen, aber weniger tiefes Wissen und Kompetenzen aufbauen.</span>**
+:::
+
+::: {.footer}
+Wolfgang
+:::
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Im Detail
+
+Forschung sieht kognitives Auslagern (**Cognitive offloading**) als Problem, wenn KI in der Schule eingesetzt wird:
+
+> "Our findings highlight the need for thoughtful integration of generative AI in educational settings **to ensure that human learning is preserved**." @bastani2025
+
+> "Results indicated that students using LLMs experienced significantly lower cognitive load. ..., these students **demonstrated lower-quality reasoning and argumentation** ..." @stadler2024
+
+::: {.footer}
+Marc
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Cognitive Offloading
+
+
+**Cognitive offloading** reduziert die kognitive Belastung, definiert in @risko2016
+
+Nichts neues, seit der Informationstechnologie ist es möglich, kognitive Aufgaben an externe Geräte auszulagern.
+
+::: {.incremental}
+- <span class="blue">**Bücher:**</span> Nehmen uns das Erinnern ab, aber man muss nun **lesen und schreiben können**.
+- <span class="blue">**Rechenmaschinen:**</span> Nehmen uns das Rechnen ab, aber man muss nun mit **vielen Zahlen (Tabellen) umgehen** können.
+- <span class="blue">**Suchmaschinen:**</span> Nehmen uns das Recherchieren ab, aber man muss nun **mit viel mehr Informationen umgehen** können.
+- <span class="blue">**Denkmaschinen:**</span> Nehmen uns das Denken ab, aber man muss nun ....
+  * <span class="blue">**KI steuern, kritisch überwachen und Ausnahmesituationen auflösen**</span> können.
+:::
+
+::: {.footer}
+Wolfgang
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Bildung im Sandwich
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- KI Arbeitswelt verlangt zunehmend **höhere Denkfertigkeiten** und **kreative Problemlösungen**, für die **kritisches Denken**, **tiefes Wissen** und **ganzheitliche Kompetenzen** notwendig sind.
+
+- KI Nutzung der Schüler*innen kann zu **kognitivem Offloading** führen, wodurch **tiefes Wissen** und **ganzheitliche Kompetenzen** nicht mehr aufgebaut werden.
+
+:::
+::: {.column width="50%"}
+![Bildung im Sandwich](images/KI Sandwich.png){width="80%"}
+:::
+::::
+
+<!-- =================================================== slide ===================================================== -->
+## II.
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+Lernen mit und trotz KI
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## KI sensitive Pädagogik 1/2
+
+::::{.columns}
+::: {.column width="40%"}
+
+Wie beim Sport, wo wir freiwillig auf Hilfsmittel verzichten, um unsere Fähigkeiten zu trainieren, brauchen wir die gleiche Haltung für den Umgang 
+mit KI. 
+
+**Es geht um unsere kognitive Fitness.**
+
+
+:::
+::: {.column width="60%"}
+
+![ChatGPT Cheating Marathon](images/ChatGPTCheatingMarathon.png)
+
+:::
+::::
+
+
+## KI-sensitive Pädagogik 2/2
+Lernsituationen müssen – gerade mit KI – bewusst **kognitive Eigenleistung** fordern.
+
+
+- Nach **Newmann** und **Bransford** entsteht *authentische intellektuelle Arbeit*, wenn Lernende:
+  * **Wissen/Kompetenzen selbst aufbauen** – statt nur reproduzieren,
+  * **Abläufe analysieren, synthetisieren und bewerten** – statt Verfahren nachzuahmen,
+  * Kompetenzen auf **neue Situationen übertragen** können.
+
+Lernsituationen müssen produktive **kognitive Herausforderungen** erschaffen, die motivieren, kognitive Kernaufgaben selbst zu tun und nicht einfach an die KI zu delegieren.
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Diskussion
+
+:::: {.columns}
+::: {.column width="30%"}
+
+**Diskussion im Plenum**: Wie könnte das aussehen? 
+
+<div type="inputField" id="inputField8"></div>
+
+
+:::
+::: {.column width="70%"}
+
+<div type="inputCollection" ref="inputField8" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- ------------------------------------------------- slide ----------------------------------------------------- -->
+## Mit KI auf Augenhöhe 1/2
+
+Wir wählen **schlecht an KI delegierbare Aufgaben**:
+
+1. KI kann nur schwer abschätzen, was **nicht in ihren Trainingsdaten vorkommt**: *Unbekanntes / Letzte Klassenfahrt / Schlussfolgern über dort erlebtes*
+2. KI scheitert bei **schlecht spezifiziertem Kontext**: *Lerndende müssen unterspezifizierte Aufgaben konkretisieren*
+3. KI ist nicht gut darin, **„echt persönliche“ Merkmale** zu erzeugen: *Lerndende müssen ihre eigenen Erfahrungen, Meinungen, Gefühle einbringen*
+4. KI ist gibt oft keine gut begründete Auswahl zwischen **gleichwertigen Optionen**: *Lernende müssen die Auswahl selbst treffen.*
+5. KI ist schlecht im **Schlussfolgern über lange Ketten**: *Lerndende müssen komplexe Schlussfolgerungen selbst erarbeiten.*
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## 1. Zeichnen 🞋
+
+:::: {.columns}
+::: {.column width="50%}
+
+Wir wollen ein Bild zeichnen, mit [ChatGPT](https://chatgpt.com/).
+
+**Aufgabe:** Prompte ChatGPT so das ihr möglichst nahe an das gesuchte Bild kommt. **Bild nicht hochladen!**
+
+![1](images/ChatGPT__a_boy_in_Bern_1.png){width="88%"}
+
+:::
+::: {.column width="50%}
+
+![2](images/ChatGPT__a_boy_in_Bern_2.png){width="65%"}
+:::
+::::
+
+:::{.notes .small}
+Gib mir ein Comic Bild von einem Jungen der in einer Strasse in einem Berner Vorort steht. Im Hintergrund sind mehrstöckige Häuser (4 Stockwerke).
+
+Der Stil soll wie folgt sein:
+
+moderner Indie-Graphic-Novel, stimmungsvolle limitierte Farbpalette, entsättigte Blautöne und Purpurtöne, flache Schattenformen, strukturierte Sonnenuntergangsverläufe, saubere Umrisse mit variierendem Strichgewicht, stilisierte Bewegungskomposition, analoge Körnungstextur, emotional kinoreifes Comic-Art
+
+---
+
+Give me a comic picture of a boy standing at a street in a Bern suburb. There are multistore hauses (4 levels in the background)
+
+The style should be as follows
+
+modern indie graphic novel, moody limited palette, desaturated blues and purples, flat shape shadows, textured sunset gradients, clean varying-weight outlines, stylized movement composition, analog grain texture, emotionally cinematic comic art
+
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Zeichnen mit KI 2/2
+
+Wenn wir die Stimmung nicht angeben, nur die Umgebung, bekommen wir ein ganz anderes Bild.
+
+![3](images/ChatGPT__a_boy_in_Bern_standard.png){width="72%"}
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Comiczeichnen
+
+:::: {.columns}
+::: {.column width="50%"}
+Comic Zeichnen ist richtig aufwendig. ChatGPT kann uns dabei helfen. Die Story muss aber von uns kommen.
+
+- Storyline: Die Geschichte in einem Satz.
+- Storyboard: Wie sieht die Geschichte aus? 
+- Bildbeschreibung: Was ist auf den einzelnen Bildern zu sehen?
+- Dialoge: Was sagen die Figuren?
+- Zeichnungen: Zeichne jeweils **ein Bild (Panel)** mit KI.
+- Zusammenfügen: In einem Graphikprogram, füge die Bilder und Dialoge zusammen.
+
+:::
+::: {.column width="50%"}
+![](images/PerfekterTag.png){width="70%"}
+:::
+::::
+
+- [ChatGPT](https://chatgpt.com/)
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## 2. Richtig-Falsch-Fragen 🞋 
+
+**Aufgabe**: Prompte ChatGPT, wie unten und beurteile die verschiedenen Antworten:
+
+Im Kontext der Schweizer Geschichte: Gründung der Schweizerischen Eidgenossenschaft, beurteile die folgenden zwei Fragen:
+
+
+
+> War die Gründung des Schweizer Bundesstaates 1848 ein Erfolg?
+
+ 
+> Beurteile, ob die Schweizer Bundesverfassung von 1848 die Hauptkonflikte des Sonderbundkrieges gelöst hat. Unterscheide zwischen religiösen, politischen und wirtschaftlichen Konflikten und bewerte die Situation aus der Perspektive eines katholischen konservativen Kantons und eines liberalen städtischen Kantons.
+
+Wie unterscheiden sich die Antworten? Welche erfordert mehr Kompetenz von den Lernenden im Umgang mit KI? Warum?
+
+<br/>
+
+- [ChatGPT](https://chatgpt.com/)
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## 3. Geschichtsverständnis
+
+**Aufgabe**: Prompte ChatGPT, wie unten und beurteile die Antwort:
+
+>  Hilf mir bei dieser Schulaufgabe: „Welche Rolle spielte die sogenannte Kollektivvereinbarung von Olten im Oktober 1918 für die Verschärfung der Spannungen vor dem Landesstreik? Gib eine differenzierte Einschätzung.“
+
+>  Zeige mir die wichtigsten Punkte mittels eines farbigen und gut lesbaren, von Links nach Rechts gezeichneten, Mermaid Mindmap Plots.
+
+- **Beurteile die Antwort von ChatGPT:**
+
+  - Welche Aussagen macht ChatGPT? 
+  - Wie faktisch korrekt ist die Antwort?
+
+<br/>
+
+- [ChatGPT](https://chatgpt.com/)
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Mit KI auf Augenhöhe 2/2
+
+Die Lernenden **erarbeiten sich ganzheitliche Kompetenzen** mittels eines Dialogs mit der KI.
+
+1. KI hilft beim **gesamtheitlichen Erfassen** eines komplexen Gebiets
+2. KI hilft bei **Einzelschritten** aber nicht Ende-zu-Ende
+3. KI hilft beim **Reflektieren über den Lösungsweg**. Lösung muss aber selbst erarbeitet werden.
+
+
+Die Lernenden müssen die Ergebnisse der KI verstehen, sie konsolidieren und ihre 'Erkenntnisse' der Klasse präsentieren.
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## 4. Biologie
+
+**Aufgabe**: Prompte ChatGPT, wie unten und beurteile die Antwort:
+
+>  Hilf mir bei dieser Schulaufgabe: "Die Forschung bei Altos Labs des Amazon Gründers Jeff Bezos hat die führenden Longevity Forscher der Welt rekrutiert und fokussiert sich auf biologische Verjüngungstechnologien, um die "biologische Uhr" zurückzudrehen. Es ist der Firma gelungen Zellen von alten Mäusen in einen Zustand zu versetzen, der dem von jungen Mäusen ähnelt. Nun testet sie offenbar die Reprogrammierung von Organen außerhalb des Körpers („ex vivo“), die maschinell ausserhalb der Körpers verjüngt werden. Reiche Personen mit degenerierten Organen könnten so ihre Organe verjüngen lassen. Gib eine differenzierte Einschätzung."
+
+Welche Aussagen macht ChatGPT? Wie faktisch korrekt ist die Antwort? Lass Dir von KI helfen, aber *Achtung* das kann falsch sein!?
+
+<br/>
+
+- [ChatGPT](https://chatgpt.com/)
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## 5. Kurvendiskussion
+
+:::: {.columns}
+::: {.column width="60%"}
+
+**Die Schüler\*innen erarbeiten sich die Grundlagen der Kurvendiskussion.**
+
+Aufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*innen ChatGPT mit:
+
+> Bitte gib mir den Matplotlib code um die function y = x³-3x²-9x+27 zu zeichnen
+
+:::
+
+::: {.column width="40%"}
+
+![](images/Kurvendiskussion1.png){width="80%"}
+
+:::
+::::
+
+:::{.text-sm}
+- Führt den Code aus. Was sagt der Plot aus? Beschreibe die Funktion in Worten.
+- Weise die KI an, Nullstellen, Extremstellen und evtl. Wendestellen zu berechnen und im Plot zu markieren.
+- Frage die KI nach, wenn Du Begriffe nicht verstehst. Frage nach einer Erklärung in einfachen Worten und nach einer mathematischen Definition.
+- Präsentiere die Ergebnisse in der Klasse. Was hast du verstanden? Was nicht? Wie könntest Du Deine Darstellung verbessern?
+:::
+
+- [ChatGPT](https://chatgpt.com/)
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## 6. Känguruh-Math 🞋
+ 
+**Die Schüler\*innen verstehen graphisch eine komplexe Känguruh Aufgabe.**
+
+> Nina hat einen Kreis mit 20 Punkten in 20 gleich lange Kreisbögen geteilt.
+> Sie zeichnet alle Sehnen ein, die zwei dieser Punkte verbinden. Wie viele dieser
+> Sehnen sind länger als der Radius, aber kürzer als der Durchmesser des Kreises?
+
+> was it richtig?: (A) 90 (B) 100 (C) 120 (D) 140 (E) 160
+
+:::{.text-sm}
+- Diskutiert mit Euren Nachbarn was die Aufgabe bedeutet. 
+- Erklärt Euch die Aufgabe. Macht dazu eine Zeichnung erst per Hand, dann mit ChatGPT.
+- Versucht die Aufgabe nur mittels der Zeichnung zu lösen. Passt mittels KI die Zeichnung an, wenn ihr nicht weiterkommt.
+:::
+
+- [ChatGPT](https://chatgpt.com/)
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Diskussion
+
+:::: {.columns}
+::: {.column width="30%"}
+
+**Diskussion im Plenum**: Wie könnte das aussehen? 
+
+<div type="inputField" id="inputField8"></div>
+
+
+:::
+::: {.column width="70%"}
+
+<div type="inputCollection" ref="inputField8" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
+
+:::
+::::
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## AIDu - KI Lerntechnologien
+
+::::{.columns}
+::: {.column width="60%"}
+
+<br>
+KI-Lerntechnologien entwickeln, 
+
+* die <span class="blue">pädagogische Prinzipien verbindlich umsetzen</span>
+
+  * **didaktisches Zielverhalten** definieren und umsetzen
+
+  * **Qualität** von KI-Lerndialogen in Echtzeit sichern
+
+  * **Risiken** erkennen und begrenzen
+:::
+::: {.column width="40%"}
+![](images/Welcome AIDu.png){width="80%" style="border: 1px solid black;"}
+:::
+::::
+
+
+:::{.notes}
+* das <span class="blue">**didaktisch definiertes Zielverhalten des KI-Tutors kennen und umsetzen**</span>
+
+  * Feedback und Scaffolding im Einklang mit den Lernzielen
+  * Einbettung in authentische Lernkontexte
+
+* **qualitativ hochwertige Bildungsdialoge mit KI in Echtzeit umsetzen und <span class="blue">deren Qualität sicherstellen</span> können**
+
+  * Übereinstimmung mit dem beabsichtigten Lehrverhalten
+  * Übereinstimmung mit den Zielen der Lerneinheit und den fachspezifischen Inhalten
+
+* sich der <span class="blue">**Risiken von KI-Dialogen im Bildungsbereich bewusst sein und diese mindern**</span>
+
+  * Verletzung pädagogischer Prinzipien
+  * Verlust der Tutorrolle und der Kontrolle über den Lernprozess
+  * Halluzinationen und Fehlinformationen
+
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Chemie mit AIDU
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Berner FH: **Hochschule für Agrar-, Forst- und Lebensmittelwissenschaften HAFL**
+
+- viele **Studiumsanfänger.innen die kein/wenig Grundwissen in Chemie** mitbringen.
+- aber ....
+  - Agrarchemie
+  - Lebensmittelchemie
+  - Umweltchemie
+  - Biochemie
+
+<span class="blue">Kann KI Lerntechnologie helfen?</span>
+
+:::
+::: {.column width="50%"}
+![](images/Bern_HAFL.png){width="100%"}
+:::
+::::
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## AIDu - Chemie Tutoring
+
+[![](images/PeriodicTable.png){width="80%" style="border: 1px solid black;"}](https://sebayt.ch/aidu)
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## AIDu - Lehrersicht
+
+![](images/AIDuDialogReview.png){width="80%" style="border: 1px solid black;"}
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## AIDu-Lernbegleitung
+
+[![SRF berichtet](https://il.srf.ch/images/?imageUrl=https://download-media.srf.ch/world/image/video/2025/04/8df4b9f3-2e49-4322-9e0c-ef873a1ae610-567s28ms.png&format=webp&width=720)](https://www.srf.ch/play/tv/_/video/_?id=8df4b9f3-2e49-4322-9e0c-ef873a1ae610&urn=urn:srf:video:8df4b9f3-2e49-4322-9e0c-ef873a1ae610&aspectRatio=16_9)
+
+["Schweiz aktuell", Schweizer Fernsehen](https://www.srf.ch/play/tv/-/video/-?urn=urn%3Asrf%3Avideo%3Ab3fff828-9d59-488a-80f2-b1678191443f)
+["Rendez-vous", Radio SRF](https://www.srf.ch/audio/rendez-vous/kuenstliche-intelligenz-im-klassenzimmer?partId=qSrrfc0iKCGTC9b0Wpb7-JIdrlA)
+[Beitrag auf SRF online](https://www.srf.ch/news/schweiz/klassenzimmer-der-zukunft-ki-in-der-schule-bildung-oder-beschaeftigung)
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## 7. Baue-ein-Element 🞋 
+
+<br/><br/>
+
+:::{.centered-xxl-text}
+- [https://sebayt.ch/aidu/](https://sebayt.ch/aidu/)
+- Voucher: {{< env VOUCHER >}}
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Diskussion
+
+:::: {.columns}
+::: {.column width="30%"}
+
+**Diskussion im Plenum**
+
+<div type="inputField" id="inputField18"></div>
+
+
+:::
+::: {.column width="70%"}
+
+<div type="inputCollection" ref="inputField18" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Materialien
+
+::::{.columns}
+::: {.column width="50%"}
+
+<br/>
+
+- **PDF** version dieser Präsentation:
+  - Im Browser [e] drücken und "Print to PDF" auswählen
+
+- "Interagieren mit KI auf Augenhöhe" Handout:
+  - in Arbeit: Wird per Mail verschickt, sobald fertig
+
+- https://github.com/WolfgangSpahn:
+  - [Atelier Frauenfeld BZT 2026](https://wolfgangspahn.github.io/Atelier_Frauenfeld_BZT_2026)
+:::
+::: {.column width="50%"}
+
+![](images/KIaufAugenhöheHandout.png){width="70%"}
+  <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+:::
+::::
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## _
+
+:::{.centered-xxl-text}
+> AI, **'Alien Intelligenz'**, ist gekommen um zu bleiben. Wir - Lehr- und Lernende - müssen lernen, wie wir sie pädagogisch sinnvoll einsetzen können, um geistige Fähigkeiten zu stärken, statt sie zu schwächen.
+:::
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Abschlussplenum
+
+Feedback zum Atelier, offene Fragen, Diskussion
+
+:::: {.columns}
+::: {.column width="50%"}
+**Input I**
+
+<div type="inputField" id="inputField20"></div>
+
+<div type="inputCollection" ref="inputField20" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
+
+:::
+::: {.column width="50%"}
+
+**Input II**
+
+<div type="inputField" id="inputField21"></div>
+
+<div type="inputCollection" ref="inputField21" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- =================================================== slide ===================================================== -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+ _-_ Danke für die Aufmerksamkeit _-_
+ <br>
+[>/](https://wolfgangspahn.github.io/intro-IS2-KI-research.github.io)
+:::
+
+<!-- =================================================== slide ===================================================== -->
+## _
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+ _-_ Danke für die Aufmerksamkeit _-_
+ <br>
+[>/](https://wolfgangspahn.github.io/intro-IS2-KI-research.github.io)
+:::
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+
+## Ergebnis: Log. Denken
+
+:::: {.columns}
+::: {.column width="30%"}
+
+**KI versus Mensch. Was fällt auf?**
+
+<div type="inputField" id="inputField7"></div>
+
+
+:::
+::: {.column width="70%"}
+
+<div type="inputCollection" ref="inputField7" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
+
+:::
+::::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Die Reihe
+
+
+- '>' steht für 0
+- 'v' steht für 1
+
+Wir haben also 4-stellige Bit-Zeilen (wie Binärzahlen):
+
+- '> > > >' → 0000 → Dezimal 0
+- '> > > v' → 0001 → Dezimal 1
+- '> > v >' → 0010 → Dezimal 2
+
+Man sieht: Die Zahlen zählen einfach im Binärsystem hoch: 0, 1, 2, …
+
+Die nächste Zahl wäre dann: 3 im Dezimalsystem; 0011 im Binärsystem:
+
+- 0 0 1 1 → '> > v v'
+
+Darum muss das Fragezeichen ein 'v' sein.
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Die Hüte
+
+Wenn Carla zwei weisse Hüte sieht, weiss sie dass der Rest schwarze Hüte sein müssen. Sie schliesst also auf einen schwarzen Hut für sich selbst.
+
+| Nr. | Anna | Bernd | Carla |
+|----:|:----:|:-----:|:-----:|
+| 1   | ◼️   | ◼️    | ◼️    |
+| 2   | ◻️   | ◼️    | ◼️    |
+| 3   | ◼️   | ◻️    | ◼️    |
+| 4   | ◼️   | ◼️    | ◻️    |
+| 5   | ◼️   | ◻️    | ◻️    |
+| 6   | ◻️   | ◼️    | ◻️    |
+| 7   | ◻️   | ◻️    | ◼️    |
+
+Kann Carla nur aus den Aussagen der anderen beiden auf die Farbe ihres Hutes schliessen?
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Der verschwundene Test
+
+Die naheliegendste Erklärung ist:
+
+- Die Mathetests sind nicht gestohlen worden, sondern durch den Wind vom Schreibtisch aus dem Fenster geweht worden.
+
+Also: Kein Diebstahl, sondern ein „Papier-Desaster“ durch das übers Wochenende offene Fenster.
+
+
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Mustererkennung  🞋
+
+<div type="mustererkennung" id="svg-mustererkennung"></div>
+
+::: {.absolute top=150 right=300 width="45%"}
+$$
+{\tiny
+	Formel: \mathrm{output} =
+\mathrm{\tanh}\left(
+\mathrm{input}_1 \cdot \mathrm{weight}_1 +
+\cdots +
+\mathrm{input}_4 \cdot \mathrm{weight}_4
+\right)
+}
+$$
+:::
+
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Literature

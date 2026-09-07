@@ -1,0 +1,68 @@
+digraph {
+	rankdir=TB
+	node [fontname=cursive]
+	e1 [label="Wonder & Curiosity" fillcolor=moccasin shape=oval style=filled]
+	e2 [label="Isolation & Mystery" fillcolor=moccasin shape=oval style=filled]
+	e3 [label="Prosperity & Growth" fillcolor=moccasin shape=oval style=filled]
+	e4 [label="Overreach & Competition" fillcolor=moccasin shape=oval style=filled]
+	e5 [label="Collapse & Desperation" fillcolor=moccasin shape=oval style=filled]
+	e6 [label="Warning & Reflection" fillcolor=moccasin shape=oval style=filled]
+	{
+		rank=same
+		e1
+		e2
+		e3
+		e4
+		e5
+		e6
+	}
+	e1 -> e2
+	e2 -> e3
+	e3 -> e4
+	e4 -> e5
+	e5 -> e6
+	e1_f0 [label="Vanished civilizations raise questions" fillcolor=lightblue shape=rect style=filled]
+	e1 -> e1_f0
+	e1_f1 [label="Easter Island statues astonish explorers" fillcolor=lightblue shape=rect style=filled]
+	e1_f0 -> e1_f1
+	e1_f2 [label="Polynesian origins confirmed" fillcolor=lightblue shape=rect style=filled]
+	e1_f1 -> e1_f2
+	e2_f0 [label="Most isolated habitable island" fillcolor=lightblue shape=rect style=filled]
+	e2 -> e2_f0
+	e2_f1 [label="No trees, limited animals by 1722" fillcolor=lightblue shape=rect style=filled]
+	e2_f0 -> e2_f1
+	e2_f2 [label="No external contact evidence" fillcolor=lightblue shape=rect style=filled]
+	e2_f1 -> e2_f2
+	e3_f0 [label="Initial lush forest ecosystem" fillcolor=lightblue shape=rect style=filled]
+	e3 -> e3_f0
+	e3_f1 [label="Population grew (7k–20k)" fillcolor=lightblue shape=rect style=filled]
+	e3_f0 -> e3_f1
+	e3_f2 [label="Abundant food: birds, porpoises, crops" fillcolor=lightblue shape=rect style=filled]
+	e3_f1 -> e3_f2
+	e4_f0 [label="Statue building intensified (1200–1500)" fillcolor=lightblue shape=rect style=filled]
+	e4 -> e4_f0
+	e4_f1 [label="Deforestation for transport, fuel, farming" fillcolor=lightblue shape=rect style=filled]
+	e4_f0 -> e4_f1
+	e4_f2 [label="Rats prevented forest regeneration" fillcolor=lightblue shape=rect style=filled]
+	e4_f1 -> e4_f2
+	e4_f3 [label="Resource competition among clans" fillcolor=lightblue shape=rect style=filled]
+	e4_f2 -> e4_f3
+	e5_f0 [label="Forest and species extinction" fillcolor=lightblue shape=rect style=filled]
+	e5 -> e5_f0
+	e5_f1 [label="Loss of canoes → no fishing/porpoises" fillcolor=lightblue shape=rect style=filled]
+	e5_f0 -> e5_f1
+	e5_f2 [label="Cannibalism and warfare emerge" fillcolor=lightblue shape=rect style=filled]
+	e5_f1 -> e5_f2
+	e5_f3 [label="Population collapse (~1700)" fillcolor=lightblue shape=rect style=filled]
+	e5_f2 -> e5_f3
+	e5_f4 [label="Statues toppled by 1864" fillcolor=lightblue shape=rect style=filled]
+	e5_f3 -> e5_f4
+	e6_f0 [label="Gradual decline unnoticed year-to-year" fillcolor=lightblue shape=rect style=filled]
+	e6 -> e6_f0
+	e6_f1 [label="Modern parallels: resource depletion" fillcolor=lightblue shape=rect style=filled]
+	e6_f0 -> e6_f1
+	e6_f2 [label="Global society lacks escape" fillcolor=lightblue shape=rect style=filled]
+	e6_f1 -> e6_f2
+	e6_f3 [label="History offers chance to learn" fillcolor=lightblue shape=rect style=filled]
+	e6_f2 -> e6_f3
+}
