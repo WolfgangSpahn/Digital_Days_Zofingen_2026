@@ -41,7 +41,7 @@ QUARTO_FRONTEND_BUNDLE=$(QUARTO_FRONTEND_DIR)built/index.js
 APPLET_BUILD_AN_ATOM_DIR ?= $(HOME)/Projects/Solidjs/applet-build-an-atom
 
 #-------
-.PHONY: local.ateliers render images serve upload upload.ateliers load load.ateliers interaktive.run dev uebungen docs
+.PHONY: local.ateliers render images serve upload upload.ateliers load load.ateliers interaktive.run dev uebungen docs links literatur
 
 literatur:            ## create a link to the literature.bib file
 	ln -s ~/Projects/ai-tutoring-literature/literature.bib literature.bib
@@ -60,6 +60,12 @@ render:               ## Render the markdown with quarto into DOCS_PATH
 
 images:               ## Create a symbolic link to the images directory
 	ln -s $(IMG_DIR_ORIG) images
+
+links:               ## Create symbolic links for `lit` and `images` from $HOME
+	@echo "Creating symlink for lit -> $(HOME)/Projects/ai-tutoring-literature"
+	@ln -sfn $(HOME)/Projects/ai-tutoring-literature lit
+	@echo "Creating symlink for images -> $(IMG_DIR_ORIG)"
+	@ln -sfn $(IMG_DIR_ORIG) images
 
 serve:                ## Serves the project via quarto
 serve: render
