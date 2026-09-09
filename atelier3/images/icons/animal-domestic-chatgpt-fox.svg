@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+<title>Fox avatar</title>
+<g stroke="#666" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path fill="#F6A04D" d="M70 71 50 30c-4-9 2-15 11-10l42 29M186 71l20-41c4-9-2-15-11-10l-42 29"/>
+  <path fill="#FFF8EE" d="M62 34l17 32-22-14zM194 34l-17 32 22-14z"/>
+  <path fill="#F6A04D" d="M56 113c0-48 31-82 72-82s72 34 72 82l18 13-18 13c-16 18-42 28-72 28s-56-10-72-28l-18-13z"/>
+  <path fill="#FFF" d="M43 126c25 5 44 12 62 22 14 8 32 8 46 0 18-10 37-17 62-22l-13 13c-16 18-42 28-72 28s-56-10-72-28z"/>
+  <path fill="#F6A04D" d="M83 164c-8 15-11 34-8 53 2 12 12 20 24 20h58c12 0 22-8 24-20 3-19 0-38-8-53"/>
+  <path fill="#FFF" d="M104 168c5 14 13 25 24 33 11-8 19-19 24-33z"/>
+  <path fill="#F6A04D" d="M171 191c33 2 50-16 60-40 18 24 20 54 4 75-17 22-46 24-72 9"/>
+  <path fill="#FFF" d="M202 192c13-7 22-17 29-31 3 11 4 22 2 32l-19 11z"/>
+  <circle fill="#555" cx="101" cy="111" r="8"/>
+  <circle fill="#555" cx="155" cy="111" r="8"/>
+  <path fill="#555" d="M116 126q12-8 24 0-2 12-12 12t-12-12z"/>
+  <path fill="none" d="M128 138q0 12-10 12M128 138q0 12 10 12"/>
+  <path fill="#777" d="M88 232q8-12 18 0zM112 232q8-12 18 0zM136 232q8-12 18 0zM160 232q8-12 18 0z"/>
+</g>
+</svg>

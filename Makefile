@@ -19,7 +19,6 @@ QMD=index.qmd
 PORT=5050
 
 # sources
-UEBUNGEN_ORIG=$(HOME)/Projects/Workshops/Workshops/$(NAME)/
 IMG_DIR_ORIG=$(HOME)/Projects/wsp-images/
 
 # targets
@@ -41,7 +40,7 @@ QUARTO_FRONTEND_BUNDLE=$(QUARTO_FRONTEND_DIR)built/index.js
 APPLET_BUILD_AN_ATOM_DIR ?= $(HOME)/Projects/Solidjs/applet-build-an-atom
 
 #-------
-.PHONY: local.ateliers render images serve upload upload.ateliers load load.ateliers interaktive.run dev uebungen docs links literatur
+.PHONY: local.ateliers render images serve upload upload.ateliers load load.ateliers interaktive.run dev docs links literatur
 
 literatur:            ## create a link to the literature.bib file
 	ln -s ~/Projects/ai-tutoring-literature/literature.bib literature.bib
@@ -50,9 +49,7 @@ render:               ## Render the markdown with quarto into DOCS_PATH
 	sed 's/atelier/$(DOCS_PATH)/g' includes.orig.html > includes.html
 	cat includes.html
 	@mkdir -p $(DOCS_PATH)/images
-	@mkdir -p $(DOCS_PATH)/uebungen
 	@cp -rf images/icons $(DOCS_PATH)/images/
-	@cp -rf uebungen $(DOCS_PATH)/uebungen/
 	@npm --prefix "$(APPLET_BUILD_AN_ATOM_DIR)" run build-app
 	@ATELIER_LABEL="$(ATELIER_LABEL)" PRESENTER="$(PRESENTER)" VOUCHER="$(VOUCHER)" quarto render $(QMD) --output-dir $(DOCS_PATH)/
 	@mkdir -p $(DOCS_PATH)/site_libs/applet-build-an-atom
@@ -114,13 +111,6 @@ dev:                  ## Serves the project in development mode from $(DOCS_TAR_
 		echo "✅ Port $(PORT) is free. Starting development server..."; \
 		cd $(DOCS_TAR_PATH) && python -m http.server $(PORT); \
 	fi
-
-uebungen:             ## Copy exercises
-	rm -rf uebungen/
-	mkdir -p uebungen/
-	cp $(UEBUNGEN_ORIG)/uebungen.tar . 
-	tar -xvf uebungen.tar -C uebungen/
-
 
 docs:                 ## Copy DOCS_PATH to docs for github pages
 	rm -rf docs/
