@@ -5,7 +5,7 @@ subtitle: |
   <br>
   <br>
   
-  <br>^v0.5.0^<br>
+  <br>^v0.9.1^<br>
   *Wolfgang Spahn*
   <br><br>
   10.09.2026
@@ -64,13 +64,15 @@ Habt Ihr eine bezahlte Version (Pro, Plus, Enterprise)?
 
 ## Agenda
 
-- **KI Status 2026 ([I](#i.))** <span class="red">^35min^</span>
-  - KI etabliert sich ^🞋[[Euer-KI-Ziel]](#euer-ki-ziel)^
+- **KI Status 2026 ([I](#i.))** <span class="red">^15min^</span>
+  - KI etabliert sich
   - KI verändert die Schule ^🞋[[Zeitenwende]](#zeitenwende)^ 
 
-- **Lernen und Lehren mit/trotz Künstlicher Intelligenz ([II](#ii.))** <span class="red">^55min^</span>
+- **Lernen und Lehren mit/trotz Künstlicher Intelligenz ([II](#ii.))** <span class="red">^45min^</span>
   * Mit KI auf Augenhöhe: s.d. ^🞋[[Zeichnen]](#zeichnen)^ ^🞋[[Richtig-Fragen]](#richtig-falsch-fragen)^  ^[[Geschichtsverständnis]](#geschichtsverständnis)^
   * Mit KI auf Augenhöhe: g.k. ^[[Biologie]](#biologie)^ ^[[Kurvendiskussion]](#kurvendiskussion)^ ^🞋[[Känguruh-Math]](#känguruh-math)^
+
+- **KI Lerntechnologien ([III](#iii.))** <span class="red">^opt^</span>
   * Basale Kernkompetenzen lernen ^🞋[[Atombau]](#baue-ein-element)^
 
 
@@ -83,30 +85,6 @@ Habt Ihr eine bezahlte Version (Pro, Plus, Enterprise)?
 ::: {.centered-xxl-text}
 KI Status 2026
 :::
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Euer-KI-Ziel
-
-
-::::{.columns}
-::: {.column width="50%"}
-
-Input 1:
-
-<div type="inputField" id="inputFieldWA"></div>
-<div type="inputCollection" ref="inputFieldWA" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
-
-:::
-::: {.column width="50%}
-
-Input 2::
-
-<div type="inputField" id="inputFieldWB"></div>
-<div type="inputCollection" ref="inputFieldWB" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
-
-:::
-::::
-
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
 
@@ -184,23 +162,30 @@ links: [@knuth_claude_cycles; @openai_gluonen; @anthropic_c_compiler]
 
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Erweitertes Denken
+## KI erweitert Denken
+
+::::{.columns}
+:::{.column width="50%" .text-sm}
 
 * **Ja gerne!**
 
+  * Kompetenzen erweitern, entwickeln.
   * Ideen finden, auf die wir selbst nicht kommen.
   * Ergebnisse geistiger Arbeit erzielen, die vorher nicht möglich waren.
-  * Uns kognitiv selektiv entlasten.
-  * Geistiger Autor sein/bleiben.
-  * Kompetenz behalten, erweitern, entwickeln.
+  * Uns kognitiv selektiv entlasten, und doch Geistiger Autor sein/bleiben.
+
 
 * **Nein danke!**
 
-  * Kognitive Fähigkeiten verkümmern lassen.
+  * Kompetenzen/Kognitive Fähigkeiten verkümmern lassen.
   * Fehlerhaft Inputs übernehmen.
   * Geistige Autorenschaft verlieren.
   * Vertrauliche Daten weitergeben.
-
+:::
+:::{.column width="50%" .small}
+![ChatGPT: KI hilft](images/erweiteres_denken_mit_KI.png){width="80%"}
+:::
+::::
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
 ## Zeitenwende 🞋
 
@@ -245,7 +230,7 @@ NZZ Interview: KI-Analyse von Schüler:innen Statements
 Was sagt die Forschung zu den Auswirkungen von KI auf Lernen und Gedächtnis?:
 
 :::: {.columns}
-::: {.column width="70%" .text-0xs}
+::: {.column width="70%" .text-sm}
 
 > MIT:"*Over four months,* <span class="blue">***LLM users consistently underperformed*** [less cognitive load, less recall] </span> at neural, linguistic, and behavioral levels. These results raise concerns about the long-term educational implications of LLM reliance and underscore the* ***need for deeper inquiry into AI's role in learning.***"
 
@@ -300,7 +285,7 @@ Nichts neues, seit der Informationstechnologie ist es möglich, kognitive Aufgab
 - <span class="blue">**Rechenmaschinen:**</span> Nehmen uns das Rechnen ab, aber man muss nun mit **vielen Zahlen (Tabellen) umgehen** können.
 - <span class="blue">**Suchmaschinen:**</span> Nehmen uns das Recherchieren ab, aber man muss nun **mit viel mehr Informationen umgehen** können.
 - <span class="blue">**Denkmaschinen:**</span> Nehmen uns das Denken ab, aber man muss nun ....
-  * <span class="blue">**KI steuern, kritisch überwachen und Ausnahmesituationen auflösen**</span> können.
+  * <span class="blue">**KI steuern, kritisch überwachen und Fehlersituationen auflösen**</span> können.
 :::
 
 ::: {.footer}
@@ -358,34 +343,17 @@ mit KI.
 Lernsituationen müssen – gerade mit KI – bewusst **kognitive Eigenleistung** fordern.
 
 
-- Nach **Newmann** und **Bransford** entsteht *authentische intellektuelle Arbeit*, wenn Lernende:
+- Nach **Newmann** und **Bransford** entsteht *authentische intellektuelle Arbeit*, wenn Lernende **in allen Schulstufen**:
   * **Wissen/Kompetenzen selbst aufbauen** – statt nur reproduzieren,
   * **Abläufe analysieren, synthetisieren und bewerten** – statt Verfahren nachzuahmen,
   * Kompetenzen auf **neue Situationen übertragen** können.
+  * **produktiv** mit dem Stoff **ringen** – statt oberflächlichem Auswendiglernen,
 
 Lernsituationen müssen produktive **kognitive Herausforderungen** erschaffen, die motivieren, kognitive Kernaufgaben selbst zu tun und nicht einfach an die KI zu delegieren.
 
-
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Diskussion
-
-:::: {.columns}
-::: {.column width="30%"}
-
-**Diskussion im Plenum**: Wie könnte das aussehen? 
-
-<div type="inputField" id="inputField8"></div>
-
-
+:::{.text-sm}
+@newmann1996authentic, @bransford2000howpeoplelearn
 :::
-::: {.column width="70%"}
-
-<div type="inputCollection" ref="inputField8" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
-
-:::
-::::
-
 <!-- ------------------------------------------------- slide ----------------------------------------------------- -->
 ## Mit KI auf Augenhöhe 1/2
 
@@ -468,22 +436,41 @@ Comic Zeichnen ist richtig aufwendig. ChatGPT kann uns dabei helfen. Die Story m
 
 **Aufgabe**: Prompte ChatGPT, wie unten und beurteile die verschiedenen Antworten:
 
-Im Kontext der Schweizer Geschichte: Gründung der Schweizerischen Eidgenossenschaft, beurteile die folgenden zwei Fragen:
+Im Kontext der Schweizer Geschichte: Gründung der Schweizerischen Eidgenossenschaft, Spannungen zwischen kath. und liberalen Kräften, beurteile diese zwei Fragen:
 
 
-
-> War die Gründung des Schweizer Bundesstaates 1848 ein Erfolg?
+> 1 - War die Gründung des Schweizer Bundesstaates 1848 ein Erfolg?
 
  
-> Beurteile, ob die Schweizer Bundesverfassung von 1848 die Hauptkonflikte des Sonderbundkrieges gelöst hat. Unterscheide zwischen religiösen, politischen und wirtschaftlichen Konflikten und bewerte die Situation aus der Perspektive eines katholischen konservativen Kantons und eines liberalen städtischen Kantons.
+> 2 - Beurteile, ob die Schweizer Bundesverfassung von 1848 die Hauptkonflikte des Sonderbundkrieges gelöst hat. Unterscheide zwischen religiösen, politischen und wirtschaftlichen Konflikten und bewerte die Situation aus der Perspektive eines katholischen konservativen Kantons und eines liberalen städtischen Kantons.
 
-Wie unterscheiden sich die Antworten? Welche erfordert mehr Kompetenz von den Lernenden im Umgang mit KI? Warum?
+Wie unterscheiden sich die Antworten? Wo ist kognitives Offloading wahrscheinlicher? Warum?
 
 <br/>
 
 - [ChatGPT](https://chatgpt.com/)
 
+<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
+## Euer Input
 
+::::{.columns}
+::: {.column width="50%"}
+
+Input zu 1:
+
+<div type="inputField" id="inputFieldRFA"></div>
+<div type="inputCollection" ref="inputFieldRFA" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
+
+:::
+::: {.column width="50%}
+
+Input zu 2:
+
+<div type="inputField" id="inputFieldRFB"></div>
+<div type="inputCollection" ref="inputFieldRFB" argConfig='{ "width": 500, "height": 400, "hidden": false }'></div>
+
+:::
+::::
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
 ## 3. Geschichtsverständnis
@@ -556,16 +543,14 @@ Aufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*inn
 :::{.text-sm}
 - Führt den Code aus. Was sagt der Plot aus? Beschreibe die Funktion in Worten.
 - Weise die KI an, Nullstellen, Extremstellen und evtl. Wendestellen zu berechnen und im Plot zu markieren.
-- Frage die KI nach, wenn Du Begriffe nicht verstehst. Frage nach einer Erklärung in einfachen Worten und nach einer mathematischen Definition.
-- Präsentiere die Ergebnisse in der Klasse. Was hast du verstanden? Was nicht? Wie könntest Du Deine Darstellung verbessern?
-:::
+- Frage die KI nach, wenn Du Begriffe nicht verstehst. Frage nach einer Erklärung in einfachen Worten.
+- Präsentiere die Ergebnisse in der Klasse. Was hast du verstanden? Was nicht?
 
 - [ChatGPT](https://chatgpt.com/)
 
 
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-
 ## 6. Känguruh-Math 🞋
  
 **Die Schüler\*innen verstehen graphisch eine komplexe Känguruh Aufgabe.**
@@ -577,32 +562,25 @@ Aufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*inn
 > was it richtig?: (A) 90 (B) 100 (C) 120 (D) 140 (E) 160
 
 :::{.text-sm}
-- Diskutiert mit Euren Nachbarn was die Aufgabe bedeutet. 
-- Erklärt Euch die Aufgabe. Macht dazu eine Zeichnung erst per Hand, dann mit ChatGPT.
+- Diskutiert mit Euren Nachbarn was die Aufgabe bedeutet, **ohne KI**.
+- Erklärt Euch die Aufgabe. Macht dazu eine Zeichnung erst per Hand, dann mit ChatGPT. **aber nur die Zeichnung ohne Text (verwendet matplotlib)**
 - Versucht die Aufgabe nur mittels der Zeichnung zu lösen. Passt mittels KI die Zeichnung an, wenn ihr nicht weiterkommt.
 :::
 
 - [ChatGPT](https://chatgpt.com/)
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Diskussion
-
-:::: {.columns}
-::: {.column width="30%"}
-
-**Diskussion im Plenum**: Wie könnte das aussehen? 
-
-<div type="inputField" id="inputField8"></div>
+## Eure Beispiele
 
 
+<!-- =================================================== slide ===================================================== -->
+## III.
+
+<br><br><br><br>
+
+::: {.centered-xxl-text}
+KI Lerntechnologien
 :::
-::: {.column width="70%"}
-
-<div type="inputCollection" ref="inputField8" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
-
-:::
-::::
-
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
 ## AIDu - KI Lerntechnologien
@@ -680,8 +658,6 @@ Berner FH: **Hochschule für Agrar-, Forst- und Lebensmittelwissenschaften HAFL*
 
 ![](images/AIDuDialogReview.png){width="80%" style="border: 1px solid black;"}
 
-
-
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
 ## AIDu-Lernbegleitung
 
@@ -698,7 +674,17 @@ Berner FH: **Hochschule für Agrar-, Forst- und Lebensmittelwissenschaften HAFL*
 
 :::{.centered-xxl-text}
 - [https://sebayt.ch/aidu/](https://sebayt.ch/aidu/)
-- Voucher: {{< env VOUCHER >}}
+- Voucher: aidu_wolfsclass_863f0bff
+:::
+
+:::{.notes}
+
+Class: WolfsClass
+Voucher: aidu_wolfsclass_863f0bff
+
+Class: MyClass
+Voucher: AIDu2026
+
 :::
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->
@@ -786,107 +772,7 @@ Feedback zum Atelier, offene Fragen, Diskussion
 ::: {.centered-xxl-text}
  _-_ Danke für die Aufmerksamkeit _-_
  <br>
-[>/](https://wolfgangspahn.github.io/intro-IS2-KI-research.github.io)
-:::
-
-<!-- =================================================== slide ===================================================== -->
-## _
-
-<br><br><br><br>
-
-::: {.centered-xxl-text}
- _-_ Danke für die Aufmerksamkeit _-_
- <br>
-[>/](https://wolfgangspahn.github.io/intro-IS2-KI-research.github.io)
-:::
-
-
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-
-## Ergebnis: Log. Denken
-
-:::: {.columns}
-::: {.column width="30%"}
-
-**KI versus Mensch. Was fällt auf?**
-
-<div type="inputField" id="inputField7"></div>
-
-
-:::
-::: {.column width="70%"}
-
-<div type="inputCollection" ref="inputField7" argConfig='{ "width": 700, "height": 500, "hidden": false }'></div>
-
-:::
-::::
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Die Reihe
-
-
-- '>' steht für 0
-- 'v' steht für 1
-
-Wir haben also 4-stellige Bit-Zeilen (wie Binärzahlen):
-
-- '> > > >' → 0000 → Dezimal 0
-- '> > > v' → 0001 → Dezimal 1
-- '> > v >' → 0010 → Dezimal 2
-
-Man sieht: Die Zahlen zählen einfach im Binärsystem hoch: 0, 1, 2, …
-
-Die nächste Zahl wäre dann: 3 im Dezimalsystem; 0011 im Binärsystem:
-
-- 0 0 1 1 → '> > v v'
-
-Darum muss das Fragezeichen ein 'v' sein.
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Die Hüte
-
-Wenn Carla zwei weisse Hüte sieht, weiss sie dass der Rest schwarze Hüte sein müssen. Sie schliesst also auf einen schwarzen Hut für sich selbst.
-
-| Nr. | Anna | Bernd | Carla |
-|----:|:----:|:-----:|:-----:|
-| 1   | ◼️   | ◼️    | ◼️    |
-| 2   | ◻️   | ◼️    | ◼️    |
-| 3   | ◼️   | ◻️    | ◼️    |
-| 4   | ◼️   | ◼️    | ◻️    |
-| 5   | ◼️   | ◻️    | ◻️    |
-| 6   | ◻️   | ◼️    | ◻️    |
-| 7   | ◻️   | ◻️    | ◼️    |
-
-Kann Carla nur aus den Aussagen der anderen beiden auf die Farbe ihres Hutes schliessen?
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Der verschwundene Test
-
-Die naheliegendste Erklärung ist:
-
-- Die Mathetests sind nicht gestohlen worden, sondern durch den Wind vom Schreibtisch aus dem Fenster geweht worden.
-
-Also: Kein Diebstahl, sondern ein „Papier-Desaster“ durch das übers Wochenende offene Fenster.
-
-
-
-<!-- --------------------------------------------------- slide ----------------------------------------------------- -->
-## Mustererkennung  🞋
-
-<div type="mustererkennung" id="svg-mustererkennung"></div>
-
-::: {.absolute top=150 right=300 width="45%"}
-$$
-{\tiny
-	Formel: \mathrm{output} =
-\mathrm{\tanh}\left(
-\mathrm{input}_1 \cdot \mathrm{weight}_1 +
-\cdots +
-\mathrm{input}_4 \cdot \mathrm{weight}_4
-\right)
-}
-$$
+[>/](https://sebayt.ch/docs/)
 :::
 
 <!-- --------------------------------------------------- slide ----------------------------------------------------- -->

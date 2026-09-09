@@ -1,0 +1,36 @@
+---
+config:
+  theme: 'base'
+  themeVariables:
+    primaryColor: '#d0d0d0'
+    primaryTextColor: '#404040'
+    signalColor: '#808080'
+    signalTextColor: '#222222'
+    actorBkg: 'gray'
+    actorTextColor: 'white'
+    actorBorder: 'lightgray'
+---
+
+sequenceDiagram
+    participant K as Katholisch-konservative Kantone
+    participant L as Liberale Kantone
+    participant B as Bund
+    participant W as Wirtschaft
+
+    K->>L: Politische und religiöse Gegensätze
+    L->>K: Forderung nach Reformen
+
+    K->>B: Sonderbund 1849
+    L->>B: Militärische Durchsetzung
+    B-->>K: Sonderbund aufgelöst
+
+    L->>B: Bundesverfassung 1848
+    B-->>K: Kantonsrechte bleiben erhalten
+    B-->>L: Stärkerer Bundesstaat
+    B->>W: Einheitliche Zölle, Post, Münzen
+
+    Note over K,L: Religiöser Konflikt nur teilweise gelöst
+    Note over L,B: Politischer Konflikt weitgehend gelöst
+    Note over B,W: Wirtschaftlicher Konflikt weitgehend gelöst
+
+    Note over K,W: Kompromiss: stärkerer Bund + Föderalismus

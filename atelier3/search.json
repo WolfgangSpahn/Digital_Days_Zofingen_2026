@@ -25,7 +25,7 @@
     "href": "index.html#agenda",
     "title": "Kritisches Denken",
     "section": "Agenda",
-    "text": "Agenda\n\nKI Status 2026 (I) 35min\n\nKI etabliert sich 🞋[Euer-KI-Ziel]\nKI verändert die Schule 🞋[Zeitenwende]\n\nLernen und Lehren mit/trotz Künstlicher Intelligenz (II) 55min\n\nMit KI auf Augenhöhe: s.d. 🞋[Zeichnen] 🞋[Richtig-Fragen] [Geschichtsverständnis]\nMit KI auf Augenhöhe: g.k. [Biologie] [Kurvendiskussion] 🞋[Känguruh-Math]\nBasale Kernkompetenzen lernen 🞋[Atombau]"
+    "text": "Agenda\n\nKI Status 2026 (I) 15min\n\nKI etabliert sich\nKI verändert die Schule 🞋[Zeitenwende]\n\nLernen und Lehren mit/trotz Künstlicher Intelligenz (II) 45min\n\nMit KI auf Augenhöhe: s.d. 🞋[Zeichnen] 🞋[Richtig-Fragen] [Geschichtsverständnis]\nMit KI auf Augenhöhe: g.k. [Biologie] [Kurvendiskussion] 🞋[Känguruh-Math]\n\nKI Lerntechnologien (III) opt\n\nBasale Kernkompetenzen lernen 🞋[Atombau]"
   },
   {
     "objectID": "index.html#i.",
@@ -33,13 +33,6 @@
     "title": "Kritisches Denken",
     "section": "I.",
     "text": "I.\n\n\nKI Status 2026"
-  },
-  {
-    "objectID": "index.html#euer-ki-ziel",
-    "href": "index.html#euer-ki-ziel",
-    "title": "Kritisches Denken",
-    "section": "Euer-KI-Ziel",
-    "text": "Euer-KI-Ziel\n\n\nInput 1:\n\n\n\n\n\n\n\nInput 2::"
   },
   {
     "objectID": "index.html#ki---entwicklung---2026-12",
@@ -63,11 +56,11 @@
     "text": "ICT Arbeitsmarkt\nNicole Helmer, Vice President & Global Head of Development Learning bei SAP\n\n\n Neben dem unbestreitbaren Bedarf an einer verantwortungsvollen KI-Entwicklung und einer breiten KI-Kompetenz in sämtlichen IT-Berufen müssen alle Mitarbeitenden ihre übergeordneten Fähigkeiten wie kritisches Denken, Kreativität und komplexes Problemlösen verbessern.\n\n \n\n\n(AI-Enabled ICT Workforce Consortium 2024)"
   },
   {
-    "objectID": "index.html#erweitertes-denken",
-    "href": "index.html#erweitertes-denken",
+    "objectID": "index.html#ki-erweitert-denken",
+    "href": "index.html#ki-erweitert-denken",
     "title": "Kritisches Denken",
-    "section": "Erweitertes Denken",
-    "text": "Erweitertes Denken\n\nJa gerne!\n\nIdeen finden, auf die wir selbst nicht kommen.\nErgebnisse geistiger Arbeit erzielen, die vorher nicht möglich waren.\nUns kognitiv selektiv entlasten.\nGeistiger Autor sein/bleiben.\nKompetenz behalten, erweitern, entwickeln.\n\nNein danke!\n\nKognitive Fähigkeiten verkümmern lassen.\nFehlerhaft Inputs übernehmen.\nGeistige Autorenschaft verlieren.\nVertrauliche Daten weitergeben."
+    "section": "KI erweitert Denken",
+    "text": "KI erweitert Denken\n\n\n\nJa gerne!\n\nKompetenzen erweitern, entwickeln.\nIdeen finden, auf die wir selbst nicht kommen.\nErgebnisse geistiger Arbeit erzielen, die vorher nicht möglich waren.\nUns kognitiv selektiv entlasten, und doch Geistiger Autor sein/bleiben.\n\nNein danke!\n\nKompetenzen/Kognitive Fähigkeiten verkümmern lassen.\nFehlerhaft Inputs übernehmen.\nGeistige Autorenschaft verlieren.\nVertrauliche Daten weitergeben.\n\n\n\n\n\n\nChatGPT: KI hilft"
   },
   {
     "objectID": "index.html#zeitenwende",
@@ -102,7 +95,7 @@
     "href": "index.html#cognitive-offloading",
     "title": "Kritisches Denken",
     "section": "Cognitive Offloading",
-    "text": "Cognitive Offloading\nCognitive offloading reduziert die kognitive Belastung, definiert in Risko and Gilbert (2016)\nNichts neues, seit der Informationstechnologie ist es möglich, kognitive Aufgaben an externe Geräte auszulagern.\n\nBücher: Nehmen uns das Erinnern ab, aber man muss nun lesen und schreiben können.\nRechenmaschinen: Nehmen uns das Rechnen ab, aber man muss nun mit vielen Zahlen (Tabellen) umgehen können.\nSuchmaschinen: Nehmen uns das Recherchieren ab, aber man muss nun mit viel mehr Informationen umgehen können.\nDenkmaschinen: Nehmen uns das Denken ab, aber man muss nun ….\n\nKI steuern, kritisch überwachen und Ausnahmesituationen auflösen können.\n\n\n\nWolfgang"
+    "text": "Cognitive Offloading\nCognitive offloading reduziert die kognitive Belastung, definiert in Risko and Gilbert (2016)\nNichts neues, seit der Informationstechnologie ist es möglich, kognitive Aufgaben an externe Geräte auszulagern.\n\nBücher: Nehmen uns das Erinnern ab, aber man muss nun lesen und schreiben können.\nRechenmaschinen: Nehmen uns das Rechnen ab, aber man muss nun mit vielen Zahlen (Tabellen) umgehen können.\nSuchmaschinen: Nehmen uns das Recherchieren ab, aber man muss nun mit viel mehr Informationen umgehen können.\nDenkmaschinen: Nehmen uns das Denken ab, aber man muss nun ….\n\nKI steuern, kritisch überwachen und Fehlersituationen auflösen können.\n\n\n\nWolfgang"
   },
   {
     "objectID": "index.html#bildung-im-sandwich",
@@ -130,14 +123,7 @@
     "href": "index.html#ki-sensitive-pädagogik-22",
     "title": "Kritisches Denken",
     "section": "KI-sensitive Pädagogik 2/2",
-    "text": "KI-sensitive Pädagogik 2/2\nLernsituationen müssen – gerade mit KI – bewusst kognitive Eigenleistung fordern.\n\nNach Newmann und Bransford entsteht authentische intellektuelle Arbeit, wenn Lernende:\n\nWissen/Kompetenzen selbst aufbauen – statt nur reproduzieren,\nAbläufe analysieren, synthetisieren und bewerten – statt Verfahren nachzuahmen,\nKompetenzen auf neue Situationen übertragen können.\n\n\nLernsituationen müssen produktive kognitive Herausforderungen erschaffen, die motivieren, kognitive Kernaufgaben selbst zu tun und nicht einfach an die KI zu delegieren."
-  },
-  {
-    "objectID": "index.html#diskussion",
-    "href": "index.html#diskussion",
-    "title": "Kritisches Denken",
-    "section": "Diskussion",
-    "text": "Diskussion\n\n\nDiskussion im Plenum: Wie könnte das aussehen?"
+    "text": "KI-sensitive Pädagogik 2/2\nLernsituationen müssen – gerade mit KI – bewusst kognitive Eigenleistung fordern.\n\nNach Newmann und Bransford entsteht authentische intellektuelle Arbeit, wenn Lernende in allen Schulstufen:\n\nWissen/Kompetenzen selbst aufbauen – statt nur reproduzieren,\nAbläufe analysieren, synthetisieren und bewerten – statt Verfahren nachzuahmen,\nKompetenzen auf neue Situationen übertragen können.\nproduktiv mit dem Stoff ringen – statt oberflächlichem Auswendiglernen,\n\n\nLernsituationen müssen produktive kognitive Herausforderungen erschaffen, die motivieren, kognitive Kernaufgaben selbst zu tun und nicht einfach an die KI zu delegieren.\n\nNewmann et al. (1996), Bransford et al. (2000)"
   },
   {
     "objectID": "index.html#mit-ki-auf-augenhöhe-12",
@@ -172,7 +158,14 @@
     "href": "index.html#richtig-falsch-fragen",
     "title": "Kritisches Denken",
     "section": "2. Richtig-Falsch-Fragen 🞋",
-    "text": "2. Richtig-Falsch-Fragen 🞋\nAufgabe: Prompte ChatGPT, wie unten und beurteile die verschiedenen Antworten:\nIm Kontext der Schweizer Geschichte: Gründung der Schweizerischen Eidgenossenschaft, beurteile die folgenden zwei Fragen:\n\nWar die Gründung des Schweizer Bundesstaates 1848 ein Erfolg?\n\n\nBeurteile, ob die Schweizer Bundesverfassung von 1848 die Hauptkonflikte des Sonderbundkrieges gelöst hat. Unterscheide zwischen religiösen, politischen und wirtschaftlichen Konflikten und bewerte die Situation aus der Perspektive eines katholischen konservativen Kantons und eines liberalen städtischen Kantons.\n\nWie unterscheiden sich die Antworten? Welche erfordert mehr Kompetenz von den Lernenden im Umgang mit KI? Warum?\n\n\nChatGPT"
+    "text": "2. Richtig-Falsch-Fragen 🞋\nAufgabe: Prompte ChatGPT, wie unten und beurteile die verschiedenen Antworten:\nIm Kontext der Schweizer Geschichte: Gründung der Schweizerischen Eidgenossenschaft, Spannungen zwischen kath. und liberalen Kräften, beurteile diese zwei Fragen:\n\n1 - War die Gründung des Schweizer Bundesstaates 1848 ein Erfolg?\n\n\n2 - Beurteile, ob die Schweizer Bundesverfassung von 1848 die Hauptkonflikte des Sonderbundkrieges gelöst hat. Unterscheide zwischen religiösen, politischen und wirtschaftlichen Konflikten und bewerte die Situation aus der Perspektive eines katholischen konservativen Kantons und eines liberalen städtischen Kantons.\n\nWie unterscheiden sich die Antworten? Wo ist kognitives Offloading wahrscheinlicher? Warum?\n\n\nChatGPT"
+  },
+  {
+    "objectID": "index.html#euer-input",
+    "href": "index.html#euer-input",
+    "title": "Kritisches Denken",
+    "section": "Euer Input",
+    "text": "Euer Input\n\n\nInput zu 1:\n\n\n\n\n\n\n\nInput zu 2:"
   },
   {
     "objectID": "index.html#geschichtsverständnis",
@@ -200,21 +193,28 @@
     "href": "index.html#kurvendiskussion",
     "title": "Kritisches Denken",
     "section": "5. Kurvendiskussion",
-    "text": "5. Kurvendiskussion\n\n\nDie Schüler*innen erarbeiten sich die Grundlagen der Kurvendiskussion.\nAufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*innen ChatGPT mit:\n\nBitte gib mir den Matplotlib code um die function y = x³-3x²-9x+27 zu zeichnen\n\n\n\n\n\n\nFührt den Code aus. Was sagt der Plot aus? Beschreibe die Funktion in Worten.\nWeise die KI an, Nullstellen, Extremstellen und evtl. Wendestellen zu berechnen und im Plot zu markieren.\nFrage die KI nach, wenn Du Begriffe nicht verstehst. Frage nach einer Erklärung in einfachen Worten und nach einer mathematischen Definition.\nPräsentiere die Ergebnisse in der Klasse. Was hast du verstanden? Was nicht? Wie könntest Du Deine Darstellung verbessern?\n\n\n\nChatGPT"
+    "text": "5. Kurvendiskussion\n\n\nDie Schüler*innen erarbeiten sich die Grundlagen der Kurvendiskussion.\nAufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*innen ChatGPT mit:\n\nBitte gib mir den Matplotlib code um die function y = x³-3x²-9x+27 zu zeichnen\n\n\n\n\n\n\nFührt den Code aus. Was sagt der Plot aus? Beschreibe die Funktion in Worten.\nWeise die KI an, Nullstellen, Extremstellen und evtl. Wendestellen zu berechnen und im Plot zu markieren.\nFrage die KI nach, wenn Du Begriffe nicht verstehst. Frage nach einer Erklärung in einfachen Worten.\nPräsentiere die Ergebnisse in der Klasse. Was hast du verstanden? Was nicht?\nChatGPT\n\n\n\n6. Känguruh-Math 🞋\nDie Schüler*innen verstehen graphisch eine komplexe Känguruh Aufgabe.\n\nNina hat einen Kreis mit 20 Punkten in 20 gleich lange Kreisbögen geteilt. Sie zeichnet alle Sehnen ein, die zwei dieser Punkte verbinden. Wie viele dieser Sehnen sind länger als der Radius, aber kürzer als der Durchmesser des Kreises?\n\n\nwas it richtig?: (A) 90 (B) 100 (C) 120 (D) 140 (E) 160\n\n\n\nDiskutiert mit Euren Nachbarn was die Aufgabe bedeutet, ohne KI.\nErklärt Euch die Aufgabe. Macht dazu eine Zeichnung erst per Hand, dann mit ChatGPT. aber nur die Zeichnung ohne Text (verwendet matplotlib)\nVersucht die Aufgabe nur mittels der Zeichnung zu lösen. Passt mittels KI die Zeichnung an, wenn ihr nicht weiterkommt.\n\n\n\nChatGPT\n\n\n\n\nEure Beispiele\n\n\n\nIII.\n\n\nKI Lerntechnologien\n\n\n\n\nAIDu - KI Lerntechnologien\n\n\n KI-Lerntechnologien entwickeln,\n\ndie pädagogische Prinzipien verbindlich umsetzen\n\ndidaktisches Zielverhalten definieren und umsetzen\nQualität von KI-Lerndialogen in Echtzeit sichern\nRisiken erkennen und begrenzen\n\n\n\n\n\n\n\ndas didaktisch definiertes Zielverhalten des KI-Tutors kennen und umsetzen\n\nFeedback und Scaffolding im Einklang mit den Lernzielen\nEinbettung in authentische Lernkontexte\n\nqualitativ hochwertige Bildungsdialoge mit KI in Echtzeit umsetzen und deren Qualität sicherstellen können\n\nÜbereinstimmung mit dem beabsichtigten Lehrverhalten\nÜbereinstimmung mit den Zielen der Lerneinheit und den fachspezifischen Inhalten\n\nsich der Risiken von KI-Dialogen im Bildungsbereich bewusst sein und diese mindern\n\nVerletzung pädagogischer Prinzipien\nVerlust der Tutorrolle und der Kontrolle über den Lernprozess\nHalluzinationen und Fehlinformationen\n\n\n\n\n\n\nChemie mit AIDU\n\n\nBerner FH: Hochschule für Agrar-, Forst- und Lebensmittelwissenschaften HAFL\n\nviele Studiumsanfänger.innen die kein/wenig Grundwissen in Chemie mitbringen.\naber ….\n\nAgrarchemie\nLebensmittelchemie\nUmweltchemie\nBiochemie\n\n\nKann KI Lerntechnologie helfen?\n\n\n\n\n\n\nAIDu - Chemie Tutoring\n\n\n\n\nAIDu - Lehrersicht\n\n\n\n\nAIDu-Lernbegleitung\n\n\n\nSRF berichtet\n\n\n“Schweiz aktuell”, Schweizer Fernsehen “Rendez-vous”, Radio SRF Beitrag auf SRF online\n\n\n\n7. Baue-ein-Element 🞋\n\n\n\nhttps://sebayt.ch/aidu/\nVoucher: aidu_wolfsclass_863f0bff\n\n\n\nClass: WolfsClass Voucher: aidu_wolfsclass_863f0bff\nClass: MyClass Voucher: AIDu2026\n\n\n\n\nDiskussion\n\n\nDiskussion im Plenum\n\n\n\n\n\n\n\n\n\n\n\nMaterialien\n\n\n\n\nPDF version dieser Präsentation:\n\nIm Browser [e] drücken und “Print to PDF” auswählen\n\n“Interagieren mit KI auf Augenhöhe” Handout:\n\nin Arbeit: Wird per Mail verschickt, sobald fertig\n\nhttps://github.com/WolfgangSpahn:\n\nAtelier Frauenfeld BZT 2026\n\n\n\n \n\n\n\n\n_\n\n\nAI, ‘Alien Intelligenz’, ist gekommen um zu bleiben. Wir - Lehr- und Lernende - müssen lernen, wie wir sie pädagogisch sinnvoll einsetzen können, um geistige Fähigkeiten zu stärken, statt sie zu schwächen.\n\n\n\n\n\nAbschlussplenum\nFeedback zum Atelier, offene Fragen, Diskussion\n\n\nInput I\n\n\n\n\n\n\n\nInput II\n\n\n\n\n\n\n\n\n\n\n_\n\n\n- Danke für die Aufmerksamkeit -  &gt;/\n\n\n\n\nLiterature\n\n\n\n\n\n\nAI-Enabled ICT Workforce Consortium. 2024. The Transformational Opportunity of AI on ICT Jobs. AI-Enabled ICT Workforce Consortium. https://www.cisco.com/site/m/ai-workforce-consortium/resources.html.\n\n\nAnthropic. 2024. Building a c Compiler. https://www.anthropic.com/engineering/building-c-compiler.\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, and Rei Mariman. 2025. “Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics.” Proceedings of the National Academy of Sciences 122 (26). https://doi.org/10.1073/pnas.2422633122.\n\n\nBransford, John D., Ann L. Brown, and Rodney R. Cocking. 2000. How People Learn: Brain, Mind, Experience, and School. National Academy Press.\n\n\nKnuth, Donald E. n.d. Claude Cycles (Hamiltonian Cycle Notes). PDF. https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf.\n\n\nKosmyna, Nataliya, Eugene Hauptmann, Ye Tong Yuan, et al. 2025. Your Brain on ChatGPT: Accumulation of Cognitive Debt When Using an AI Assistant for Essay Writing Task. https://arxiv.org/abs/2506.08872.\n\n\nKwa, Thomas, Ben West, Joel Becker, et al. 2026. Measuring AI Ability to Complete Long Software Tasks. https://arxiv.org/abs/2503.14499.\n\n\nNewmann, Fred M., Walter G. Secada, and Gary G. Wehlage. 1996. Authentic Achievement: Restructuring Schools for Intellectual Quality. Jossey-Bass.\n\n\nOpenAI. 2024. New Result: Theoretical Physics — Gluonen Amplitude. https://openai.com/de-DE/index/new-result-theoretical-physics/.\n\n\nRisko, Evan F., and Sam J. Gilbert. 2016. “Cognitive Offloading.” Trends in Cognitive Sciences 20 (9): 676–88. https://doi.org/10.1016/j.tics.2016.07.002.\n\n\nStadler, Matthias, Maria Bannert, and Michael Sailer. 2024. “Cognitive Ease at a Cost: LLMs Reduce Mental Effort but Compromise Depth in Student Scientific Inquiry.” Computers in Human Behavior 160. https://doi.org/10.1016/j.chb.2024.108386.\n\n\nWang, Jin, and Wenxiang Fan. 2025. “The Effect of ChatGPT on Students’ Learning Performance, Learning Perception, and Higher-Order Thinking: Insights from a Meta-Analysis.” Humanities and Social Sciences Communications 12 (1): 621. https://doi.org/10.1057/s41599-025-04787-y."
   },
   {
     "objectID": "index.html#känguruh-math",
     "href": "index.html#känguruh-math",
     "title": "Kritisches Denken",
     "section": "6. Känguruh-Math 🞋",
-    "text": "6. Känguruh-Math 🞋\nDie Schüler*innen verstehen graphisch eine komplexe Känguruh Aufgabe.\n\nNina hat einen Kreis mit 20 Punkten in 20 gleich lange Kreisbögen geteilt. Sie zeichnet alle Sehnen ein, die zwei dieser Punkte verbinden. Wie viele dieser Sehnen sind länger als der Radius, aber kürzer als der Durchmesser des Kreises?\n\n\nwas it richtig?: (A) 90 (B) 100 (C) 120 (D) 140 (E) 160\n\n\n\nDiskutiert mit Euren Nachbarn was die Aufgabe bedeutet.\nErklärt Euch die Aufgabe. Macht dazu eine Zeichnung erst per Hand, dann mit ChatGPT.\nVersucht die Aufgabe nur mittels der Zeichnung zu lösen. Passt mittels KI die Zeichnung an, wenn ihr nicht weiterkommt.\n\n\n\nChatGPT"
+    "text": "6. Känguruh-Math 🞋\nDie Schüler*innen verstehen graphisch eine komplexe Känguruh Aufgabe.\n\nNina hat einen Kreis mit 20 Punkten in 20 gleich lange Kreisbögen geteilt. Sie zeichnet alle Sehnen ein, die zwei dieser Punkte verbinden. Wie viele dieser Sehnen sind länger als der Radius, aber kürzer als der Durchmesser des Kreises?\n\n\nwas it richtig?: (A) 90 (B) 100 (C) 120 (D) 140 (E) 160\n\n\n\nDiskutiert mit Euren Nachbarn was die Aufgabe bedeutet, ohne KI.\nErklärt Euch die Aufgabe. Macht dazu eine Zeichnung erst per Hand, dann mit ChatGPT. aber nur die Zeichnung ohne Text (verwendet matplotlib)\nVersucht die Aufgabe nur mittels der Zeichnung zu lösen. Passt mittels KI die Zeichnung an, wenn ihr nicht weiterkommt.\n\n\n\nChatGPT"
   },
   {
-    "objectID": "index.html#diskussion-1",
-    "href": "index.html#diskussion-1",
+    "objectID": "index.html#eure-beispiele",
+    "href": "index.html#eure-beispiele",
     "title": "Kritisches Denken",
-    "section": "Diskussion",
-    "text": "Diskussion\n\n\nDiskussion im Plenum: Wie könnte das aussehen?"
+    "section": "Eure Beispiele",
+    "text": "Eure Beispiele"
+  },
+  {
+    "objectID": "index.html#iii.",
+    "href": "index.html#iii.",
+    "title": "Kritisches Denken",
+    "section": "III.",
+    "text": "III.\n\n\nKI Lerntechnologien"
   },
   {
     "objectID": "index.html#aidu---ki-lerntechnologien",
@@ -256,11 +256,11 @@
     "href": "index.html#baue-ein-element",
     "title": "Kritisches Denken",
     "section": "7. Baue-ein-Element 🞋",
-    "text": "7. Baue-ein-Element 🞋\n\n\n\nhttps://sebayt.ch/aidu/\nVoucher: aidu_wolfsclass_863f0bff"
+    "text": "7. Baue-ein-Element 🞋\n\n\n\nhttps://sebayt.ch/aidu/\nVoucher: aidu_wolfsclass_863f0bff\n\n\n\nClass: WolfsClass Voucher: aidu_wolfsclass_863f0bff\nClass: MyClass Voucher: AIDu2026"
   },
   {
-    "objectID": "index.html#diskussion-2",
-    "href": "index.html#diskussion-2",
+    "objectID": "index.html#diskussion",
+    "href": "index.html#diskussion",
     "title": "Kritisches Denken",
     "section": "Diskussion",
     "text": "Diskussion\n\n\nDiskussion im Plenum"
@@ -294,52 +294,10 @@
     "text": "_\n\n\n- Danke für die Aufmerksamkeit -  &gt;/"
   },
   {
-    "objectID": "index.html#section-2",
-    "href": "index.html#section-2",
-    "title": "Kritisches Denken",
-    "section": "_",
-    "text": "_\n\n\n- Danke für die Aufmerksamkeit -  &gt;/"
-  },
-  {
-    "objectID": "index.html#ergebnis-log.-denken",
-    "href": "index.html#ergebnis-log.-denken",
-    "title": "Kritisches Denken",
-    "section": "Ergebnis: Log. Denken",
-    "text": "Ergebnis: Log. Denken\n\n\nKI versus Mensch. Was fällt auf?"
-  },
-  {
-    "objectID": "index.html#die-reihe",
-    "href": "index.html#die-reihe",
-    "title": "Kritisches Denken",
-    "section": "Die Reihe",
-    "text": "Die Reihe\n\n‘&gt;’ steht für 0\n‘v’ steht für 1\n\nWir haben also 4-stellige Bit-Zeilen (wie Binärzahlen):\n\n‘&gt; &gt; &gt; &gt;’ → 0000 → Dezimal 0\n‘&gt; &gt; &gt; v’ → 0001 → Dezimal 1\n‘&gt; &gt; v &gt;’ → 0010 → Dezimal 2\n\nMan sieht: Die Zahlen zählen einfach im Binärsystem hoch: 0, 1, 2, …\nDie nächste Zahl wäre dann: 3 im Dezimalsystem; 0011 im Binärsystem:\n\n0 0 1 1 → ‘&gt; &gt; v v’\n\nDarum muss das Fragezeichen ein ‘v’ sein."
-  },
-  {
-    "objectID": "index.html#die-hüte",
-    "href": "index.html#die-hüte",
-    "title": "Kritisches Denken",
-    "section": "Die Hüte",
-    "text": "Die Hüte\nWenn Carla zwei weisse Hüte sieht, weiss sie dass der Rest schwarze Hüte sein müssen. Sie schliesst also auf einen schwarzen Hut für sich selbst.\n\n\n\nNr.\nAnna\nBernd\nCarla\n\n\n\n\n1\n◼️\n◼️\n◼️\n\n\n2\n◻️\n◼️\n◼️\n\n\n3\n◼️\n◻️\n◼️\n\n\n4\n◼️\n◼️\n◻️\n\n\n5\n◼️\n◻️\n◻️\n\n\n6\n◻️\n◼️\n◻️\n\n\n7\n◻️\n◻️\n◼️\n\n\n\nKann Carla nur aus den Aussagen der anderen beiden auf die Farbe ihres Hutes schliessen?"
-  },
-  {
-    "objectID": "index.html#der-verschwundene-test",
-    "href": "index.html#der-verschwundene-test",
-    "title": "Kritisches Denken",
-    "section": "Der verschwundene Test",
-    "text": "Der verschwundene Test\nDie naheliegendste Erklärung ist:\n\nDie Mathetests sind nicht gestohlen worden, sondern durch den Wind vom Schreibtisch aus dem Fenster geweht worden.\n\nAlso: Kein Diebstahl, sondern ein „Papier-Desaster“ durch das übers Wochenende offene Fenster."
-  },
-  {
-    "objectID": "index.html#mustererkennung",
-    "href": "index.html#mustererkennung",
-    "title": "Kritisches Denken",
-    "section": "Mustererkennung 🞋",
-    "text": "Mustererkennung 🞋\n\n\n\n\n\\[\n{\\tiny\n    Formel: \\mathrm{output} =\n\\mathrm{\\tanh}\\left(\n\\mathrm{input}_1 \\cdot \\mathrm{weight}_1 +\n\\cdots +\n\\mathrm{input}_4 \\cdot \\mathrm{weight}_4\n\\right)\n}\n\\]"
-  },
-  {
     "objectID": "index.html#literature",
     "href": "index.html#literature",
     "title": "Kritisches Denken",
     "section": "Literature",
-    "text": "Literature\n\n\n\n\nAI-Enabled ICT Workforce Consortium. 2024. The Transformational Opportunity of AI on ICT Jobs. AI-Enabled ICT Workforce Consortium. https://www.cisco.com/site/m/ai-workforce-consortium/resources.html.\n\n\nAnthropic. 2024. Building a c Compiler. https://www.anthropic.com/engineering/building-c-compiler.\n\n\nBastani, Hamsa, Osbert Bastani, Alp Sungu, Haosen Ge, Özge Kabakcı, and Rei Mariman. 2025. “Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics.” Proceedings of the National Academy of Sciences 122 (26). https://doi.org/10.1073/pnas.2422633122.\n\n\nKnuth, Donald E. n.d. Claude Cycles (Hamiltonian Cycle Notes). PDF. https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf.\n\n\nKosmyna, Nataliya, Eugene Hauptmann, Ye Tong Yuan, et al. 2025. Your Brain on ChatGPT: Accumulation of Cognitive Debt When Using an AI Assistant for Essay Writing Task. https://arxiv.org/abs/2506.08872.\n\n\nKwa, Thomas, Ben West, Joel Becker, et al. 2026. Measuring AI Ability to Complete Long Software Tasks. https://arxiv.org/abs/2503.14499.\n\n\nOpenAI. 2024. New Result: Theoretical Physics — Gluonen Amplitude. https://openai.com/de-DE/index/new-result-theoretical-physics/.\n\n\nRisko, Evan F., and Sam J. Gilbert. 2016. “Cognitive Offloading.” Trends in Cognitive Sciences 20 (9): 676–88. https://doi.org/10.1016/j.tics.2016.07.002.\n\n\nStadler, Matthias, Maria Bannert, and Michael Sailer. 2024. “Cognitive Ease at a Cost: LLMs Reduce Mental Effort but Compromise Depth in Student Scientific Inquiry.” Computers in Human Behavior 160. https://doi.org/10.1016/j.chb.2024.108386.\n\n\nWang, Jin, and Wenxiang Fan. 2025. “The Effect of ChatGPT on Students’ Learning Performance, Learning Perception, and Higher-Order Thinking: Insights from a Meta-Analysis.” Humanities and Social Sciences Communications 12 (1): 621. https://doi.org/10.1057/s41599-025-04787-y."
+    "text": "Literature"
   }
 ]
