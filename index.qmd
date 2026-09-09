@@ -532,7 +532,6 @@ Aufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*inn
 > Bitte gib mir den Matplotlib code um die function y = x³-3x²-9x+27 zu zeichnen
 
 :::
-
 ::: {.column width="40%"}
 
 ![](images/Kurvendiskussion1.png){width="80%"}
@@ -545,6 +544,7 @@ Aufgabe nach kurzer Einführung in prompt engineering, prompten die Schüler*inn
 - Weise die KI an, Nullstellen, Extremstellen und evtl. Wendestellen zu berechnen und im Plot zu markieren.
 - Frage die KI nach, wenn Du Begriffe nicht verstehst. Frage nach einer Erklärung in einfachen Worten.
 - Präsentiere die Ergebnisse in der Klasse. Was hast du verstanden? Was nicht?
+:::
 
 - [ChatGPT](https://chatgpt.com/)
 
@@ -598,9 +598,12 @@ KI-Lerntechnologien entwickeln,
   * **Qualität** von KI-Lerndialogen in Echtzeit sichern
 
   * **Risiken** erkennen und begrenzen
+
 :::
 ::: {.column width="40%"}
+
 ![](images/Welcome AIDu.png){width="80%" style="border: 1px solid black;"}
+
 :::
 ::::
 
