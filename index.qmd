@@ -5,7 +5,7 @@ subtitle: |
   <br>
   <br>
   
-  <br>^v0.9.1^<br>
+  <br>{{< env ATELIER_LABEL >}}_^0.9.1^<br>
   *Wolfgang Spahn*
   <br><br>
   10.09.2026
@@ -34,7 +34,7 @@ bibliography: lit/literature.bib
 <br>
 Bitte diesen <span class="red">**Link**</span> verwenden:
 <br>
-<div class="centered-xxl-text"> [https://sebayt.ch/atelier3/](https://sebayt.ch/atelier3/) </div>
+<div class="centered-xxl-text"> [{{< env ATELIER_URL >}}]({{< env ATELIER_URL >}}) </div>
 <br>
 Für Vollbildmodus bitte diesen Button "Fullscreen" klicken oder Taste "F11".
 <br><br>

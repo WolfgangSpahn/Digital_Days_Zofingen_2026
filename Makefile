@@ -6,6 +6,7 @@ DOCS_PATH ?=atelier3
 ATELIERS_DIR ?= $(CURDIR)
 ATELIER_NUMBER = $(patsubst atelier%,%,$(DOCS_PATH))
 ATELIER_LABEL = ATELIER $(ATELIER_NUMBER)
+ATELIER_URL = https://sebayt.ch/$(DOCS_PATH)/
 PRESENTER ?= $(if $(filter atelier1,$(DOCS_PATH)),Marc,$(if $(filter atelier2,$(DOCS_PATH)),Wolfgang,$(if $(filter atelier3,$(DOCS_PATH)),Philipp,)))
 VOUCHER ?= aidu_wolfsclass_863f0bff
 
@@ -47,16 +48,16 @@ literatur:            ## create a link to the literature.bib file
 
 render:               ## Render the markdown with quarto into DOCS_PATH
 	sed 's/atelier/$(DOCS_PATH)/g' includes.orig.html > includes.html
-	cat includes.html
 	@mkdir -p $(DOCS_PATH)/images
 	@cp -rf images/icons $(DOCS_PATH)/images/
-	@npm --prefix "$(APPLET_BUILD_AN_ATOM_DIR)" run build-app
-	@ATELIER_LABEL="$(ATELIER_LABEL)" PRESENTER="$(PRESENTER)" VOUCHER="$(VOUCHER)" quarto render $(QMD) --output-dir $(DOCS_PATH)/
-	@mkdir -p $(DOCS_PATH)/site_libs/applet-build-an-atom
-	@cp -rf "$(APPLET_BUILD_AN_ATOM_DIR)/dist/." $(DOCS_PATH)/site_libs/applet-build-an-atom/
+# render quarto
+	@ATELIER_LABEL="$(ATELIER_LABEL)" ATELIER_URL="$(ATELIER_URL)" PRESENTER="$(PRESENTER)" VOUCHER="$(VOUCHER)" quarto render $(QMD) --output-dir $(DOCS_PATH)/
+	
+
+
 
 images:               ## Create a symbolic link to the images directory
-	ln -s $(IMG_DIR_ORIG) images
+	@ln -sfn $(IMG_DIR_ORIG) images
 
 links:               ## Create symbolic links for `lit` and `images` from $HOME
 	@echo "Creating symlink for lit -> $(HOME)/Projects/ai-tutoring-literature"
